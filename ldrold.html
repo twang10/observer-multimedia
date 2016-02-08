@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>Long Distance Relationship Survey</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="ldr.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="Chart.js"></script>
+
+  <script src="ldr.js"></script>
+</head>
+<body>
+
+    <div class="section" id="intro" data-0="transform:translate(0,0%);" data-100p="transform:translate(0,-100%);">
+        <h1>How does Tufts LDR?</h1>
+        <p>Here's an intro short description introducting the survey</p>
+    </div>
+
+    <div class="section" id="monogamy" data-100p="transform:translate(0,0%);" data-200p="transform:translate(0,-100%);">
+        <h1>Hello</h1>
+    </div>
+
+
+<!-- THIS PART WORKS
+    <div class="section" id="intro" data-0="transform:translate(0,0%);" data-100p="transform:translate(0,-100%);">
+        <h1>How does Tufts LDR?</h1>
+        <p>Here's an intro short description introducting the survey</p>
+    </div>
+
+    <div class="section" id="phone" data-0="transform:translate(0,100%);" data-100p="transform:translate(0,0%)" data-_box-100p="" data-_box-200p="transform:translate(0,-100%)">
+        <p>Here's an intro short description introducting the survey</p>
+        <div data-100p="left:55%;bottom[custom8]:100%;" data-_box-200p="bottom:0%;"><img src="phone.jpg" width=100px height=100px/></div>
+        <div data-100p="left:25%;bottom[custom4]:100%;" data-_box-200p="bottom:0%;"><img src="phone.jpg" width=100px height=100px/></div>
+        <div data-100p="left:35%;bottom[custom12]:100%;" data-_box-200p="bottom:0%;"><img src="phone.jpg" width=100px height=100px/></div>
+    </div>
+
+    <div class="section" data-_box-100p="transform:translate(0,100%);" data-_box-200p="transform:translate(0,0%)" data-_box-_box-200p="" data-_box-_box-300p="transform:translate(0,-100%)">
+      <h2>Average lifetime of an LDR was <span class="attn">8.64</span> months</h2>
+      <div class="box2" data-_box-100p="background:url(phone.jpg) no-repeat; background-size: 100%;" data-_box-300p="background:url(cal.jpg) no-repeat; background-size: 100%;"></div>
+      <div class="canvas"><canvas id='lifetimeGraph' width="400" height="400"></canvas></div>
+    </div>
+
+
+
+    <div class="section" id="monogamy" data-_box-100p="transform:translate(0,100%);" data-_box-200p="transform:translate(0,0%)" data-_box-300p="" data-_box-400p="transform:translate(0,-100%)">
+        <h2><span class="attn">13%</span> of LDRS were non-monogamous</h2>
+        <p>//IMG//</p>
+    </div>
+
+    -->
+
+    <!--
+
+    <div class="section" data-_box-300p="transform:translate(0,100%);" data-_box-400p="transform:translate(0,0%)" data-_box-100p="" data-_box-500p="transform:translate(0,-100%)">
+      <h2><span class="attn">22%</span> of respondants have spent nearly the entire duration their relationship apart thus far</h2>
+      <h2>The longest-separated couple has been long-distance for <span class="attn">5</span> years</h2>
+    </div >
+
+
+    <div class="section" data-_box-400p="transform:translate(0,100%);" data-_box-500p="transform:translate(0,0%)" data-_box-100p="" data-_box-600p="transform:translate(0,-100%)">
+      <h2>The average distance of separation is <span class="attn">1271</span> miles</h2>
+      <h2>Most distance: <span class="attn">8000</span> miles</h2>
+      <p>Short description talking about how _% of people were between 2-100 mi, _% etc</p>
+    </div>
+
+    <div class="section" data-_box-500p="transform:translate(0,100%);" data-_box-600p="transform:translate(0,0%)" data-_box-100p="" data-_box-700p="transform:translate(0,-100%)">
+      <h2>How often to we visit each other?</h2>
+      <p>Most couples go 2 - 4 months between visits
+        at 54% of responses. The next most common is less than a month between visits,
+        and the least common response is 12+ months between visits.</p>
+      <div class="canvas"><canvas width="400" height="400" id='visitGraph'></canvas></div>
+    </div>
+
+    <div class="section" data-_box-600p="transform:translate(0,100%);" data-_box-700p="transform:translate(0,0%)" data-_box-100p="" data-_box-800p="transform:translate(0,-100%)">
+      <h2>What keeps us apart?</h2>
+      <p>Cost of travel is the primary factor preventing us from seeing our
+         significant others more often, while time constriants due to schoolwork took
+         2nd place.</p>
+      <div class="canvas"><canvas width="400" height="400" id='factorsGraph'></canvas></div>
+    </div>
+
+    <div class="section" data-_box-700p="transform:translate(0,100%);" data-_box-800p="transform:translate(0,0%)" data-_box-100p="" data-_box-900p="transform:translate(0,-100%)">
+      <h2>How do we communicate?</h2>
+      <div class="canvas"><canvas width="400" height="400" id='techGraph'></canvas></div>
+    </div>
+
+    <div class="section" data-_box-800p="transform:translate(0,100%);" data-_box-900p="transform:translate(0,0%)" data-_box-100p="" data-_box-1000p="transform:translate(0,-100%)">
+      <h2>How often do we think about people who are not our significant others sexually?</h2>
+      <div class="canvas"><canvas width="400" height="400" id='sexGraph'></canvas></div>
+    </div>
+
+    <div class="section" data-_box-900p="transform:translate(0,100%);" data-_box-1000p="transform:translate(0,0%)" data-_box-100p="" data-_box-1100p="transform:translate(0,-100%)">
+      <h2>What do we fight about?</h2>
+      <div class="canvas"><canvas width="400" height="400" id='fightGraph'></canvas></div>
+    </div>
+
+    <div class="section" data-_box-1000p="transform:translate(0,100%);" data-_box-1100p="transform:translate(0,0%)" data-_box-100p="" data-_box-1200p="transform:translate(0,-100%)">
+      <h2>Who are we jealous of?</h2>
+      <p>Who do we most fear our significant others will be //with?//</p>
+      <p>W scrolly bit maybe have big words shadowing scrolling through bg</p>
+      <div class="canvas"><canvas width="400" height="400" id='jealousGraph'></canvas></div>
+    </div>
+
+    <div class="section" data-_box-1100p="transform:translate(0,100%);" data-_box-1200p="transform:translate(0,0%)" data-_box-100p="" data-_box-1300p="transform:translate(0,-100%)">
+      <h2><span class="attn">66%</span> have had the legitimacy of their relationship questioned due to it being long-distance</h2>
+      <p>//IMG//</p>
+    </div>
+
+    <div class="section" data-_box-1200p="transform:translate(0,100%);" data-_box-1300p="transform:translate(0,0%)" data-_box-100p="" data-_box-1400p="transform:translate(0,-100%)">
+      <h2><span class="attn">60%</span> say being in an LDR improved their communication skills</h2>
+      <p>//IMG//</p>
+    </div>
+
+    <div class="section" data-_box-1300p="transform:translate(0,100%);" data-_box-1400p="transform:translate(0,0%)" data-_box-100p="" data-_box-1500p="transform:translate(0,-100%)">
+      <h2>How do we feel about the future?</h2>
+      <div class="canvas"><canvas width="400" height="400" id='futureGraph'></canvas></div>
+    </div>
+
+-->
+
+<!--
+    <div class="section">
+      <h1>How does Tufts LDR?</h1>
+      <p>Here's an intro short description introducting the survey</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="attn">13%</span> of LDRS were non-monogamous</h2>
+      <p>//IMG//</p>
+    </div>
+
+    <div class="section">
+      <h2>Average lifetime of an LDR was <span class="attn">8.64</span> months</h2>
+      <div class="canvas"><canvas id='lifetimeGraph'></canvas></div>
+      <br><br><br><br><br><br>
+    </div>
+
+    <div class="section"
+        data-bottom-top="opacity:0;"
+        data-top-top="opacity:1;">
+      <h2><span class="attn">22%</span> of respondants have spent nearly the entire duration their relationship apart thus far</h2>
+      <br>
+      <h2>The longest-separated couple has been long-distance for <span class="attn">5</span> years</h2>
+    </div >
+
+    <div class="section">
+      <h2>The average distance of separation is <span class="attn">1271</span> miles</h2>
+      <h2>Most distance: <span class="attn">8000</span> miles</h2>
+      <p>Short description talking about how _% of people were between 2-100 mi, _% etc</p>
+    </div>
+
+    <div class="section">
+      <h2>How often to we visit each other?</h2>
+      <p>Most couples go 2 - 4 months between visits
+        at 54% of responses. The next most common is less than a month between visits,
+        and the least common response is 12+ months between visits.</p>
+      <div class="canvas"><canvas id='visitGraph'></canvas></div>
+    </div>
+
+    <div class="section">
+      <h2>What keeps us apart?</h2>
+      <p>Cost of travel is the primary factor preventing us from seeing our
+         significant others more often, while time constriants due to schoolwork took
+         2nd place.</p>
+      <div class="canvas"><canvas id='factorsGraph'></canvas></div>
+    </div>
+
+    <div class="section">
+      <h2>How do we communicate?</h2>
+      <div class="canvas"><canvas id='techGraph'></canvas></div>
+    </div>
+
+    <div class="section">
+      <h2>How often do we think about people who are not our significant others sexually?</h2>
+      <div class="canvas"><canvas id='sexGraph'></canvas></div>
+    </div>
+
+    <div class="section">
+      <h2>What do we fight about?</h2>
+      <div class="canvas"><canvas id='fightGraph'></canvas></div>
+    </div>
+
+    <div class="section">
+      <h2>Who are we jealous of?</h2>
+      <p>Who do we most fear our significant others will be //with?//</p>
+      <p>W scrolly bit maybe have big words shadowing scrolling through bg</p>
+      <div class="canvas"><canvas id='jealousGraph'></canvas></div>
+    </div>
+
+    <div class="section">
+      <h2><span class="attn">66%</span> have had the legitimacy of their relationship questioned due to it being long-distance</h2>
+      <p>//IMG//</p>
+    </div>
+
+    <div class="section">
+      <h2><span class="attn">60%</span> say being in an LDR improved their communication skills</h2>
+      <p>//IMG//</p>
+    </div>
+
+    <div class="section">
+      <h2>How do we feel about the future?</h2>
+      <div class="canvas"><canvas id='futureGraph'></canvas></div>
+    </div>
+
+-->
+
+  <script src="skrollr.js"></script>
+  <script>
+    skrollr.init({
+        constants: {
+            //fill the box for a "duration" of 150% of the viewport (pause for 150%)
+            //adjust for shorter/longer pause
+            box: '200p'
+        },
+        easing: {
+            /* mod 1 to repeat. The 0.2 is for 200p in box, change accordingly*/
+            custom4: function(p) {
+                return (4 * p)%1.2;
+            },
+            custom12: function(p) {
+                return (12 * p)%1.2;
+            },
+            custom8: function(p) {
+                return (8 * p)%1.2;
+            },
+		}
+    });
+  </script>
+</body>
+</html>

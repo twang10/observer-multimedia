@@ -1,6 +1,9 @@
 $(document).ready(function(){
+
     drawGraphs();
 });
+
+
 
 function drawGraphs() {
     lifetimeGraph();
@@ -42,7 +45,7 @@ function lifetimeGraph() {
         pointDot : false,
         datasetStroke : false,
         showTooltips: false,
-        responsive:true
+        responsive:false
     });
 }
 
@@ -84,7 +87,7 @@ function visitGraph() {
     new Chart(ctx).Doughnut(data, {
         segmentStrokeColor : "#fff", // can change to be bg color later
         animateRotate : false,
-        responsive:true
+        responsive:false
     });
 }
 
@@ -130,13 +133,16 @@ function factorsGraph() {
     var ctx = document.getElementById("factorsGraph").getContext("2d");
     new Chart(ctx).PolarArea(data, {
         animateRotate : false,
-        responsive:true,
+        responsive:false,
     });
 }
 
 function techGraph() {
     var data = {
-        labels: ["Phone Calls", "Texting/iMessage", "Facebook Message", "Video Chatting", "Snapchat", "Instagram", "Whatsapp/Kik/Line/Kakao Talk", "Tinder/Grindr/OkCupid Message", "Email", "Couple (app)", "Words with Fiends", "Other"],
+        labels: ["Phone Calls", "Texting/iMessage", "Facebook Message",
+                 "Video Chatting", "Snapchat", "Instagram", "Whatsapp/Kik/Line/Kakao Talk",
+                 "Tinder/Grindr/OkCupid Message", "Email", "Couple (app)",
+                 "Words with Fiends", "Other"],
         datasets: [
             {
                 label: "Day-To-Day",
@@ -159,7 +165,7 @@ function techGraph() {
 
     var ctx = document.getElementById("techGraph").getContext("2d");
     var myBarChart = new Chart(ctx).Bar(data, {
-        responsive:true
+        responsive:false
     });
 }
 
@@ -201,7 +207,7 @@ function sexGraph() {
     new Chart(ctx).Doughnut(data, {
         segmentStrokeColor : "#fff", // can change to be bg color later
         animateRotate : false,
-        responsive:true
+        responsive:false
     });
 }
 
@@ -247,7 +253,7 @@ function fightGraph() {
     var ctx = document.getElementById("fightGraph").getContext("2d");
     new Chart(ctx).PolarArea(data, {
         animateRotate : false,
-        responsive:true,
+        responsive:false,
     });
 }
 
@@ -283,7 +289,7 @@ function jealousGraph() {
     new Chart(ctx).Doughnut(data, {
         segmentStrokeColor : "#fff", // can change to be bg color later
         animateRotate : false,
-        responsive:true
+        responsive:false
     });
 }
 

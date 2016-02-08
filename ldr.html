@@ -1,98 +1,221 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <title>Long Distance Relationship Survey</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="ldr.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="Chart.js"></script>
-    <script src="ldr.js"></script>
+  <title>Long Distance Relationship Survey</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="ldr.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="Chart.js"></script>
+  <script src="ldr.js"></script>
 </head>
 <body>
-    <div class="wrapper">
 
-        <div class="entry">
-            <h1>How does Tufts LDR?</h1>
-            <p>Here's an intro short description introducting the survey</p>
+    <div id="skrollr-body">
+        <div id="intro" class="container"
+        data-0="z-index:1; position:fixed; top:0; left:0; bottom:0; left:0; margin:auto; height:100%; width:100%;"
+		data-800="z-index:0;"
+        data-1000="opacity:1;"
+        data-1200="opacity:0;">
+            <div class="inner">
+                <h1>How does Tufts do long-distance?</h1>
+                <p>
+                    The Tufts Observer surveyed nearly 300 students on heir long-distance
+                    relationships, past and present. These are their experiences.
+                </p>
+            </div>
         </div>
 
-        <div class="entry">
-            <h2><span class="attn">13%</span> of LDRS were non-monogamous</h2>
-            <p>//IMG//</p>
+        <div id="main"
+        data-800="position:fixed; top:100%; width:100%; height:100%;"
+        data-1000="top:0%;"
+        data-5000="top:0%;"
+        data-5200="top:-100%">
+            <section id="page1" class="container" data-0="top:0%;">
+                <div data-800="top:-100px;"
+				data-1000="top:190px;"
+				data-2000="opacity:1;"
+				data-2300="opacity:0;">
+                    <div class="inner"
+                    data-1100="opacity:0;"
+					data-1300="opacity:1;" >
+                        <p class="left">The average distance separating us from our siginifcant others is <span class="attn">1,854</span> miles</p>
+                    </div>
+                    <div class="inner"
+                    data-1200="opacity:0;"
+					data-1400="opacity:1;" >
+                        <p class="left">The farthest-separated couple is <span class="attn">12,000</span> miles apart</p>
+                    </div>
+                </div>
+            </section>
+            <section id="page2" class="container" data-2100="top:100%;" data-2300="top:0%;">
+                <div data-2300="top:-100px;"
+				data-2500="top:190px;"
+				data-3500="opacity:1;"
+				data-3800="opacity:0;">
+                    <div class="inner"
+                    data-2600="opacity:0;"
+					data-2800="opacity:1;" >
+                        <p class="right"><span class="attn">18%</span> of long-distance couples have spent nearly their entire apart so far</p>
+                    </div>
+                    <div class="inner"
+                    data-2700="opacity:0;"
+					data-2900="opacity:1;" >
+                        <p class="right">The longest-separated couple has been long-distance for <span class="attn">5.8</span> years</p>
+                    </div>
+                </div>
+            </section>
+            <section id="page1" class="container" data-3600="top:100%;" data-3800="top:0%;">
+                <div data-3800="top:-100px;"
+				data-4000="top:190px;"
+				data-5000="opacity:1;"
+				data-5200="opacity:0;">
+                    <div class="inner"
+                    data-4100="opacity:0;"
+					data-4300="opacity:1;" >
+                        <p class="left">The average long-distance relationship breaks up after <span class="attn">8.9</span> months of separation</p>
+                    </div>
+                    <div class="inner"
+                    data-4200="opacity:0;"
+					data-4400="opacity:1;" >
+                        <p class="right"><span class="attn">60.6%</span> of respondants have had the legitimacy of their relationship questioned due to it being long-distance</p>
+                    </div>
+                </div>
+            </section>
         </div>
 
-        <div class="entry">
-            <h2>Average lifetime of an LDR was <span class="attn">8.64</span> months</h2>
-            <div class="canvas"><canvas id='lifetimeGraph'></canvas></div>
-            <br><br><br><br><br><br>
+        <div id="title2" class="container"
+        data-5000="z-index:-1;"
+        data-5200="z-index:1; position:fixed; top:0; left:0; bottom:0; left:0; margin:auto; height:100%; width:100%;"
+        data-6000="z-index:0;"
+        data-6200="opacity:1;"
+        data-6400="opacity:0;">
+            <div class="inner">
+                <h1>How do we communicate?</h1>
+            </div>
         </div>
 
-        <div class="entry">
-            <h2><span class="attn">22%</span> of respondants have spent nearly the entire duration their relationship apart thus far</h2>
-            <br>
-            <h2>The longest-separated couple has been long-distance for <span class="attn">5</span> years</h2>
+        <div id="main2"
+        data-6000="position:fixed; top:100%; width:100%; height:100%;"
+        data-6200="top:0%;"
+        data-10700="top:0%;"
+        data-10900="top:-100%">>
+            <section id="page1" class="container"
+            data-0="top:0%;">
+                <div data-6000="top:-100px;"
+                data-6200="top:190px;"
+                data-7200="opacity:1;"
+                data-7400="opacity:0;">
+                    <div class="inner"
+                    data-6300="opacity:0;"
+                    data-6500="opacity:1;">
+                        <p class="left"><span class="attn">52%</span> of respondants said their communication skills improved as a result of being in a long-distance relationship.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="page1" class="container"
+            data-0="top:0%;"
+            data-7200="opacity:0;"
+            data-7400="opacity:1;">
+                <div data-7400="top:-100px;"
+                data-7600="top:190px;"
+                data-8700="opacity:1;"
+                data-8900="opacity:0;">
+                    <div class="inner"
+                    data-7700="opacity:0;"
+                    data-7900="opacity:1;">
+                        <h2>How we use technology</h2>
+                    </div>
+                    <div class="inner"
+                    data-7800="opacity:0;"
+                    data-8000="opacity:1;">
+                        <p>graph</p>
+                        <p>1. Plays some role in our relationship</p>
+                        <p>2. Primary means of communication</p>
+                    </div>
+                </div>
+            </section>
+            <section id="page1" class="container"
+            data-0="top:0%;"
+            data-8700="opacity:0;"
+            data-8900="opacity:1;">
+                <div data-8900="top:-100px;"
+                data-9100="top:190px;"
+                data-10700="opacity:1;"
+                data-10900="opacity:0;">
+                    <div class="inner"
+                    data-9200="opacity:0;"
+                    data-9400="opacity:1;">
+                        <h2>What we fight about</h2>
+                    </div>
+                    <div class="inner"
+                    data-9300="opacity:0;"
+                    data-9500="opacity:1;">
+                        <p>29.64% Quality of communication</p>
+                    </div>
+                    <div class="inner"
+                    data-9400="opacity:0;"
+                    data-9600="opacity:1;">
+                        <p>21.68% Frequency of communication</p>
+                    </div>
+                    <div class="inner"
+                    data-9500="opacity:0;"
+                    data-9700="opacity:1;">
+                        <p>14.16% Whether or not to stay together</p>
+                    </div>
+                    <div class="inner"
+                    data-9600="opacity:0;"
+                    data-9800="opacity:1;">
+                        <p>13.94% Jealousy (fear of our significant other forming other meaningful relationships)</p>
+                    </div>
+                    <div class="inner"
+                    data-9700="opacity:0;"
+                    data-9900="opacity:1;">
+                        <p>10.62% Jealousy (fear of infidelity)</p>
+                    </div>
+                    <div class="inner"
+                    data-9800="opacity:0;"
+                    data-10000="opacity:1;">
+                        <p>9.96% Frequency of visits and who visits whom</p>
+                    </div>
+                </div>
+            </section>
+
         </div>
 
-        <div class="entry">
-            <h2>The average distance of separation is <span class="attn">1271</span> miles</h2>
-            <h2>Most distance: <span class="attn">8000</span> miles</h2>
-            <p>Short description talking about how _% of people were between 2-100 mi, _% etc</p>
+        <div id="title3" class="container"
+        data-10700="z-index:-1;"
+        data-10900="z-index:1; position:fixed; top:0; left:0; bottom:0; left:0; margin:auto; height:100%; width:100%;"
+        data-11700="z-index:0;">
+            <div class="inner">
+                <h1>How does distance affect our relationship?</h1>
+            </div>
         </div>
 
-        <div class="entry">
-            <h2>How often to we visit each other?</h2>
-            <p>Most couples go 2 - 4 months between visits
-                at 54% of responses. The next most common is less than a month between visits,
-                and the least common response is 12+ months between visits.</p>
-            <div class="canvas"><canvas id='visitGraph'></canvas></div>
-        </div>
-
-        <div class="entry">
-            <h2>What keeps us apart?</h2>
-            <p>Cost of travel is the primary factor preventing us from seeing our
-               significant others more often, while time constriants due to schoolwork took
-               2nd place.</p>
-            <div class="canvas"><canvas id='factorsGraph'></canvas></div>
-        </div>
-
-        <div class="entry">
-            <h2>How do we communicate?</h2>
-            <div class="canvas"><canvas id='techGraph'></canvas></div>
-        </div>
-
-        <div class="entry">
-            <h2>How often do we think about people who are not our significant others sexually?</h2>
-            <div class="canvas"><canvas id='sexGraph'></canvas></div>
-        </div>
-
-        <div class="entry">
-            <h2>What do we fight about?</h2>
-            <div class="canvas"><canvas id='fightGraph'></canvas></div>
-        </div>
-
-        <div class="entry">
-            <h2>Who are we jealous of?</h2>
-            <p>Who do we most fear our significant others will be //with?//</p>
-            <p>W scrolly bit maybe have big words shadowing scrolling through bg</p>
-            <div class="canvas"><canvas id='jealousGraph'></canvas></div>
-        </div>
-
-        <div class="entry">
-            <h2><span class="attn">66%</span> have had the legitimacy of their relationship questioned due to it being long-distance</h2>
-            <p>//IMG//</p>
-        </div>
-
-        <div class="entry">
-            <h2><span class="attn">60%</span> say being in an LDR improved their communication skills</h2>
-            <p>//IMG//</p>
-        </div>
-
-        <div class="entry">
-            <h2>How do we feel about the future?</h2>
-            <div class="canvas"><canvas id='futureGraph'></canvas></div>
-        </div>
 
     </div>
+
+  <script src="skrollr.js"></script>
+  <script>
+    skrollr.init({
+        constants: {
+            //fill the box for a "duration" of 150% of the viewport (pause for 150%)
+            //adjust for shorter/longer pause
+            box: '200p'
+        },
+        easing: {
+            /* mod 1 to repeat. The 0.2 is for 200p in box, change accordingly*/
+            custom4: function(p) {
+                return (4 * p)%1.2;
+            },
+            custom12: function(p) {
+                return (12 * p)%1.2;
+            },
+            custom8: function(p) {
+                return (8 * p)%1.2;
+            },
+		}
+    });
+  </script>
 </body>
 </html>
