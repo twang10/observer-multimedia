@@ -56,22 +56,45 @@ body {
 	height: 100%;
 }
 
-#intro {
+#intro-title {
 	background-image:url("240H.jpg");
 	background-size: 100vw;
 	background-repeat: no-repeat;
+	color:white;
 }
 
-#title2 {
+#communication-title {
 	background-image:url("240H.jpg");
 	background-size: 100vw;
 	background-repeat: no-repeat;
+	color:white;
 }
 
-#title3 {
+#distance-title {
 	background-image:url("240H.jpg");
 	background-size: 100vw;
 	background-repeat: no-repeat;
+	color:white;
+}
+
+#endpage {
+	background-image:url("240H.jpg");
+	background-size: 100vw;
+	background-repeat: no-repeat;
+	color:white;
+}
+
+.gradient {
+	background: rgba(0, 0, 0, 0.7); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)); /* Standard syntax */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 #page1 {
@@ -83,19 +106,6 @@ body {
 	color:black;
 }
 
-.outline {
-	text-align: center;
-	width: 1080px;
-	outline-style: dotted;
-	outline-width: 5px;
-}
-#phone {
-	background:#f0f0f0;
-	overflow:hidden;
-}
-#monogamy {
-	background:rgb(218, 204, 252);
-}
 .box {
 	position:absolute;
 	left:0;
@@ -131,16 +141,8 @@ p {
   max-width:1080px;
 }
 
-.entry {
-
-}
-
-.canvas {
-
-}
-
 .attn{
-	font-size:2em;
+	font-size:1.33em;
     text-transform: uppercase;
     font-weight: 900;
 }
