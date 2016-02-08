@@ -1,5 +1,61 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700,900);
 
+svg + svg {
+    margin-top: 2em;
+}
+
+.wppr {
+    max-width: 30px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 2em;
+}
+
+svg {
+    width: 30px;
+    max-height: 40px;
+    display: inline-block;
+}
+
+.arrow-down path {
+	stroke: white;
+	fill: transparent;
+	stroke-width: 2px;
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow
+{
+	0% {opacity:0}
+	40% {opacity:.8}
+	80% {opacity:0}
+	100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+	0% {opacity:0}
+	40% {opacity:.8}
+	80% {opacity:0}
+	100% {opacity:0}
+}
+
+.arrow-down path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrow-down path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrow-down path.a3 {
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
 .skrollable {
 	position:fixed;
 	z-index:100;
@@ -48,7 +104,7 @@ body {
 
 .inner {
 	margin:auto;
-	max-width: 1200px;
+	max-width: 1080px;
 }
 
 .skrollr .container{
@@ -56,31 +112,35 @@ body {
 }
 
 #intro-title {
-	background-image:url("240H.jpg");
+	background-image:url("bus.jpg");
 	background-size: 100vw;
 	background-repeat: no-repeat;
 	color:white;
+	background-position: 50% 50%;
 }
 
 #communication-title {
-	background-image:url("240H.jpg");
+	background-image:url("girlonphone.jpg");
 	background-size: 100vw;
 	background-repeat: no-repeat;
 	color:white;
+	background-position: 50% 50%;
 }
 
 #distance-title {
-	background-image:url("240H.jpg");
+	background-image:url("tent.jpg");
 	background-size: 100vw;
 	background-repeat: no-repeat;
 	color:white;
+	background-position: 50% 50%;
 }
 
 #endpage {
-	background-image:url("240H.jpg");
+	background-image:url("couple.jpg");
 	background-size: 100vw;
 	background-repeat: no-repeat;
 	color:white;
+	background-position: 50% 50%;
 }
 
 .gradient {
@@ -165,38 +225,42 @@ p {
   }
 
   #intro-title {
-	  background-image:url("240H.jpg") no-repeat center center fixed;
+	  background-image:url("bus.jpg") no-repeat center center fixed;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
 	  background-size: cover;
+	  background-position: 50% 50%;
 	  color:white;
   }
 
   #communication-title {
-	  background-image:url("240H.jpg") no-repeat center center fixed;
+	  background-image:url("girlonphone.jpg") no-repeat center center fixed;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
 	  background-size: cover;
+	  background-position: 50% 50%;
 	  color:white;
   }
 
   #distance-title {
-	  background-image:url("240H.jpg") no-repeat center center fixed;
+	  background-image:url("tent.jpg") no-repeat center center fixed;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
 	  background-size: cover;
+	  background-position: 50% 50%;
 	  color:white;
   }
 
   #endpage {
-	  background-image:url("240H.jpg") no-repeat center center fixed;
+	  background-image:url("couple.jpg") no-repeat center center fixed;
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
 	  background-size: cover;
+	  background-position: 50% 50%;
 	  color:white;
   }
 }
