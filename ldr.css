@@ -155,48 +155,48 @@ p {
   body {
     font-size:.75em;
   }
-  .wrapper {
-    position:relative;
-    margin-left:auto;
-    margin-right:auto;
-    height:100%;
+
+  h1 {
+	  font-size:2.5em;
   }
-}
 
-@media (max-width: 767px) {
-	#intro-title {
-		background-image:url("240H.jpg") no-repeat center center fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		color:white;
-	}
+  p {
+	  font-size:1.25em;
+  }
 
-	#communication-title {
-		background-image:url("240H.jpg") no-repeat center center fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		color:white;
-	}
+  #intro-title {
+	  background-image:url("240H.jpg") no-repeat center center fixed;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  color:white;
+  }
 
-	#distance-title {
-		background-image:url("240H.jpg") no-repeat center center fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		color:white;
-	}
+  #communication-title {
+	  background-image:url("240H.jpg") no-repeat center center fixed;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  color:white;
+  }
 
-	#endpage {
-		background-image:url("240H.jpg") no-repeat center center fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		color:white;
-	}
+  #distance-title {
+	  background-image:url("240H.jpg") no-repeat center center fixed;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  color:white;
+  }
+
+  #endpage {
+	  background-image:url("240H.jpg") no-repeat center center fixed;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  color:white;
+  }
 }
