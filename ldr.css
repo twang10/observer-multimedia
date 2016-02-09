@@ -18,6 +18,22 @@
     min-height: 1px;
 }
 
+.img-left  {
+	position: relative;
+	right: 0;
+	bottom: 0;
+	height:10em;
+	width:auto;
+}
+
+.img-right {
+	position: relative;
+	right: 0;
+	bottom: 0;
+	height:10em;
+	width:auto;
+}
+
 html, body {
     width:100%;
     height:100%;
@@ -33,29 +49,93 @@ body {
   font-size: 1em;
 }
 
-.section {
-	position:fixed;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
-	background:transparent center no-repeat;
-	background-size:cover;
+h1 {
+  font-size:5em;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
-.container{
+h2 {
+  font-size:2em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+p {
+  font-size:1.25em;
+}
+
+.bold {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.notice-me {
+	font-size:1.33em;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.left {
+	text-align:left;
+}
+
+.right {
+	text-align:right;
+}
+
+.container {
 	position: relative;
+	height: 100%;
 	width: 100%;
 	margin: 0 auto;
 }
 
+.wrapper {
+	padding:20px;
+}
+
 .inner {
+	position:relative;
 	margin:auto;
 	max-width: 1080px;
 }
 
-.skrollr .container{
-	height: 100%;
+.inner-absolute {
+	position:fixed;
+	height:100vh;
+	top: 0;
+	right: 0;
+	margin:auto;
+	max-width: 1080px;
+}
+
+.gradient {
+	background: rgba(0, 0, 0, 0.7);
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.border {
+	position: absolute;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom:0;
+    width: 100;
+    height: 100;
+
+    border-style:solid;
+    border-width:2px;
+    border-color:white;
+    margin:10px;
 }
 
 #intro-title {
@@ -90,143 +170,21 @@ body {
 	background-position: 50% 50%;
 }
 
-.gradient {
-	background: rgba(0, 0, 0, 0.7); /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)); /* Standard syntax */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.border {
-	position: absolute;
-    top: 0;
-    left: 0;
-    right:0;
-    bottom:0;
-    width: 100;
-    height: 100;
-
-    border-style:solid;
-    border-width:2px;
-    border-color:white;
-    margin:10px;
-}
-
-#page1 {
+.black {
+	width:100%;
+	height:100%;
     background:black;
 	color:white;
 }
-#page2 {
-    background:white;
+
+.white {
+	width:100%;
+	height:100%;
+    background:#f3f3f3;
 	color:black;
 }
 
-.box {
-	position:absolute;
-	left:0;
-	height:100%;
-	background:#09f;
-}
-
-.box2 {
-		float:left;
-		padding:6em 6em;
-	}
-
-h1 {
-  font-size:5em;
-  text-transform: uppercase;
-  font-weight: 900;
-}
-
-h2 {
-  font-size:2em;
-  text-transform: uppercase;
-  font-weight: 900;
-}
-
-p {
-  font-size:1.5em;
-}
-
-.wrapper {
-  padding:20px;
-}
-
-.attn{
-	font-size:1.33em;
-    text-transform: uppercase;
-    font-weight: 900;
-}
-
-.left{
-	text-align:left;
-}
-
-.right {
-	text-align:right;
-}
-
-@media (max-width: 767px) {
-  body {
-    font-size:.75em;
-  }
-
-  h1 {
-	  font-size:2.5em;
-  }
-
-  p {
-	  font-size:1.25em;
-  }
-
-  #intro-title {
-	  background-image:url("bus.jpg") no-repeat center center fixed;
-	  -webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  -o-background-size: cover;
-	  background-size: cover;
-	  background-position: 50% 50%;
-	  color:white;
-  }
-
-  #communication-title {
-	  background-image:url("girlonphone.jpg") no-repeat center center fixed;
-	  -webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  -o-background-size: cover;
-	  background-size: cover;
-	  background-position: 50% 50%;
-	  color:white;
-  }
-
-  #distance-title {
-	  background-image:url("tent.jpg") no-repeat center center fixed;
-	  -webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  -o-background-size: cover;
-	  background-size: cover;
-	  background-position: 50% 50%;
-	  color:white;
-  }
-
-  #endpage {
-	  background-image:url("couple.jpg") no-repeat center center fixed;
-	  -webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  -o-background-size: cover;
-	  background-size: cover;
-	  background-position: 50% 50%;
-	  color:white;
-  }
-}
-
+/*** scroll down arrow from http://codepen.io/postor/pen/mskxI ***/
 svg + svg {
     margin-top: 2em;
 }
@@ -252,16 +210,14 @@ svg {
 	-webkit-animation: arrow 2s infinite;
 }
 
-@keyframes arrow
-{
+@keyframes arrow {
 	0% {opacity:0}
 	40% {opacity:.8}
 	80% {opacity:0}
 	100% {opacity:0}
 }
 
-@-webkit-keyframes arrow /*Safari and Chrome*/
-{
+@-webkit-keyframes arrow {
 	0% {opacity:0}
 	40% {opacity:.8}
 	80% {opacity:0}
@@ -282,3 +238,100 @@ svg {
 	animation-delay:0s;
 	-webkit-animation-delay:0s; /* Safari 和 Chrome */
 }
+/******** end arrow ********/
+
+@media (max-width: 767px) {
+	h1 {
+		font-size:1.85em;
+	}
+
+	h2 {
+		font-size: 1.2em;
+	}
+
+	p {
+		font-size:1em;
+	}
+
+	#intro-title {
+		background-image:url("bus.jpg") no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-position: 50% 50%;
+		color:white;
+	}
+
+	#communication-title {
+		background-image:url("girlonphone.jpg") no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-position: 50% 50%;
+		color:white;
+	}
+
+	#distance-title {
+		background-image:url("tent.jpg") no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-position: 50% 50%;
+		color:white;
+	}
+
+	#endpage {
+		background-image:url("couple.jpg") no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-position: 50% 50%;
+		color:white;
+	}
+}
+
+
+/*********** NEW GRAPH *********/
+
+.graph-body {
+  margin: 0;
+  overflow: hidden;
+  font-family:'Raleway', sans-serif;
+  font-weight:400;
+  font-size: 14px;
+  text-align: center;
+  color:#ccc;
+}
+
+.wrap {
+  display: block;
+  margin: auto;
+  width: 1000px;
+  height: 450px;
+  position: relative;
+}
+
+p{text-align:center;}
+.label {
+  height: 1em;
+  padding: .3em;
+  font-family:'Raleway', sans-serif;
+  font-weight:400;
+  background: rgba(255, 255, 255, .8);
+  position: absolute;
+  display: none;
+  color:#333;
+
+}
+
+canvas {
+	display:flex;
+	max-width:100vw;
+	//height:auto;
+}
+
+/*********** END NEW GRAPH *********/

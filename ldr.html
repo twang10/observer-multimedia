@@ -5,8 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="ldr.css">
+  <link rel="stylesheet"
+          href="bower_components/chartist/dist/chartist.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="Chart.js"></script>
   <script src="ldr.js"></script>
 </head>
 <body>
@@ -25,7 +26,8 @@
                             <h1>How does Tufts do long distance?</h1>
                             <p>
                                 The Tufts Observer surveyed nearly 300 students on their long-distance
-                                relationships, past and present.
+                                relationships, past and present. Scroll through to see how we think, talk,
+                                fight, and love one another when we're miles, states, or oceans apart.
                             </p>
                             <div class="wppr">
                                 <svg class="arrow-down">
@@ -34,7 +36,7 @@
                                     <path class="a3" d="M0 20 L15 36 L30 20"></path>
                                 </svg>
                             </div>
-                            <p style="font-size:.9em;">scroll down</p>
+                            <p style="font-size:.8em;">scroll down</p>
                         </div>
                     </div>
                 </div>
@@ -46,7 +48,7 @@
         data-1000="top:0%;"
         data-5000="top:0%;"
         data-5200="top:-100%">
-            <section id="page1" class="container" data-0="top:0%;">
+            <section class="black" class="container" data-0="top:0%;">
                 <div data-800="top:-100px;"
 				data-1000="top:190px;"
 				data-2000="opacity:1;"
@@ -55,17 +57,34 @@
                         <div class="inner"
                         data-1100="opacity:0;"
     					data-1300="opacity:1;" >
-                            <p class="left">The average distance separating us from our siginifcant others is <span class="attn">1,854</span> miles.</p>
+                            <p class="left">
+                                The average distance separating us from our siginifcant others is
+                                <span class="notice-me">1,854</span> miles.
+                            </p>
                         </div>
                         <div class="inner"
                         data-1200="opacity:0;"
     					data-1400="opacity:1;" >
-                            <p class="left">The farthest-separated couple is <span class="attn">12,000</span> miles apart.</p>
+                            <p class="left">The farthest-separated couple is <span class="notice-me">12,000</span> miles apart.</p>
+                        </div>
+                        <div class="inner right"
+                        data-1300="opacity:0; transform:translate(0px,0px);"
+    					data-1500="opacity:1; transform:translate(-2px, 0px)"
+                        data-2300="transform:translate(-10px,0px);">
+                            <img class="img-right" src="location.png">
+                            </img>
+                        </div>
+                        <div class="inner left"
+                        data-1300="opacity:0; transform:translate(0px,0px);"
+    					data-1500="opacity:1; transform:translate(20px, 0px)"
+                        data-2300="transform:translate(60px,0px);">
+                            <img class="img-left" src="location.png">
+                            </img>
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="page2" class="container" data-2100="top:100%;" data-2300="top:0%;">
+            <section class="white" class="container" data-2100="top:100%;" data-2300="top:0%;">
                 <div data-2300="top:-100px;"
 				data-2500="top:190px;"
 				data-3500="opacity:1;"
@@ -74,17 +93,29 @@
                         <div class="inner"
                         data-2600="opacity:0;"
     					data-2800="opacity:1;" >
-                            <p class="right"><span class="attn">18%</span> of long-distance couples have spent nearly their entire apart so far.</p>
+                            <p class="right">
+                                <span class="notice-me">18%</span> of long-distance couples have spent
+                                nearly their entire apart so far.
+                            </p>
                         </div>
                         <div class="inner"
                         data-2700="opacity:0;"
     					data-2900="opacity:1;" >
-                            <p class="right">The longest-separated couple has been long-distance for <span class="attn">5.8</span> years.</p>
+                            <p class="right">
+                                The longest-separated couple has been long-distance for
+                                <span class="notice-me">5.8</span> years.
+                            </p>
+                        </div>
+                        <div class="inner left"
+                        data-2800="opacity:0;transform:translate(0px,0px);"
+    					data-3000="opacity:1;transform:translate(0px, 10px)"
+                        data-3800="transform:translate(0px,50px);">
+                            <img class="img-left" src="time.png"></img>
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="page1" class="container" data-3600="top:100%;" data-3800="top:0%;">
+            <section class="black" class="container" data-3600="top:100%;" data-3800="top:0%;">
                 <div data-3800="top:-100px;"
 				data-4000="top:190px;"
 				data-5000="opacity:1;"
@@ -93,12 +124,28 @@
                         <div class="inner"
                         data-4100="opacity:0;"
     					data-4300="opacity:1;" >
-                            <p class="left">The average long-distance relationship breaks up after <span class="attn">8.9</span> months of separation.</p>
+                            <p class="left">
+                                The average long-distance relationship breaks up after
+                                 <span class="notice-me">8.9</span> months of separation.
+                             </p>
                         </div>
                         <div class="inner"
                         data-4200="opacity:0;"
     					data-4400="opacity:1;" >
-                            <p class="right"><span class="attn">60.6%</span> of respondants have had the legitimacy of their relationship questioned due to it being long-distance.</p>
+                            <p class="right">
+                                <span class="notice-me">60.6%</span>
+                                of respondants have had the legitimacy of their relationship questioned due
+                                to it being long-distance.
+                            </p>
+                        </div>
+                        <div class="inner right"
+                        data-4300="opacity:0;"
+                        data-4500="opacity:1;">
+                            <img class="img-right" src="heartbreak.png"
+                            data-4300="transform:scale(1,1)"
+                            data-4500="transform:scale(1.1,1.1);"
+                            data-5200="transform:scale(1.2,1.2);">
+                            </img>
                         </div>
                     </div>
                 </div>
@@ -129,7 +176,7 @@
         data-6200="top:0%;"
         data-10700="top:0%;"
         data-10900="top:-100%">
-            <section id="page1" class="container"
+            <section class="black" class="container"
             data-0="top:0%;">
                 <div data-6000="top:-100px;"
                 data-6200="top:190px;"
@@ -139,12 +186,21 @@
                         <div class="inner"
                         data-6300="opacity:0;"
                         data-6500="opacity:1;">
-                            <p class="left"><span class="attn">52%</span> of respondants said their communication skills improved as a result of being in a long-distance relationship.</p>
+                            <p class="left">
+                                <span class="notice-me">52%</span> of respondants said their communication
+                                skills improved as a result of being in a long-distance relationship.
+                            </p>
+                        </div>
+
+                        <div class="inner"
+                        data-6500="opacity:0;transform:translate(100,0);"
+                        data-6700="opacity:1;transform:translate(0,0);">
+                            <img class="img-right" src="heartbreak.png"></img>
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="page1" class="container"
+            <section class="black" class="container"
             data-0="top:0%;"
             data-7200="opacity:0;"
             data-7400="opacity:1;">
@@ -161,14 +217,21 @@
                         <div class="inner"
                         data-7800="opacity:0;"
                         data-8000="opacity:1;">
-                            <p>graph</p>
-                            <p>1. Plays some role in our relationship</p>
-                            <p>2. Primary means of communication</p>
+                        <!-- NEW GRAPH -->
+                            <div class="graph-body">
+                                <div class="wrap">
+                                    <canvas id='c'></canvas>
+                                    <div class="label">text</div>
+                                </div>
+                            </div>
+                        <!-- END NEW GRAPH -->
+                            <!--<p>1. Plays some role in our relationship</p>
+                            <p>2. Primary means of communication</p> -->
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="page1" class="container"
+            <section class="black" class="container"
             data-0="top:0%;"
             data-8700="opacity:0;"
             data-8900="opacity:1;">
@@ -185,32 +248,32 @@
                         <div class="inner"
                         data-9300="opacity:0;"
                         data-9500="opacity:1;">
-                            <p><span class="attn">29.64%</span> Quality of communication</p>
+                            <p><span class="bold">29.64%</span> Quality of communication</p>
                         </div>
                         <div class="inner"
                         data-9400="opacity:0;"
                         data-9600="opacity:1;">
-                            <p><span class="attn">21.68%</span> Frequency of communication</p>
+                            <p><span class="bold">21.68%</span> Frequency of communication</p>
                         </div>
                         <div class="inner"
                         data-9500="opacity:0;"
                         data-9700="opacity:1;">
-                            <p><span class="attn">14.16%</span> Whether or not to stay together</p>
+                            <p><span class="bold">14.16%</span> Whether or not to stay together</p>
                         </div>
                         <div class="inner"
                         data-9600="opacity:0;"
                         data-9800="opacity:1;">
-                            <p><span class="attn">13.94%</span> Jealousy (fear of our SO forming other meaningful relationships)</p>
+                            <p><span class="bold">13.94%</span> Jealousy (fear of our SO forming other meaningful relationships)</p>
                         </div>
                         <div class="inner"
                         data-9700="opacity:0;"
                         data-9900="opacity:1;">
-                            <p><span class="attn">10.62%</span> Jealousy (fear of infidelity)</p>
+                            <p><span class="bold">10.62%</span> Jealousy (fear of infidelity)</p>
                         </div>
                         <div class="inner"
                         data-9800="opacity:0;"
                         data-10000="opacity:1;">
-                            <p><span class="attn">9.96%</span> Frequency of visits and who visits whom</p>
+                            <p><span class="bold">9.96%</span> Frequency of visits and who visits whom</p>
                         </div>
                     </div>
                 </div>
@@ -241,7 +304,7 @@
         data-11900="top:0%;"
         data-20100="top:0%;"
         data-20300="top:-100%">
-            <section id="page2" class="container"
+            <section class="white" class="container"
             data-0="top:0%;">
                 <div data-11700="top:-100px;"
                 data-11900="top:190px;"
@@ -251,12 +314,12 @@
                         <div class="inner"
                         data-12000="opacity:0;"
                         data-12200="opacity:1;">
-                            <p class="left"><span class="attn">13.5%</span> of long-distance relationships are non-monogamous.</p>
+                            <p class="left"><span class="notice-me">13.5%</span> of long-distance relationships are non-monogamous.</p>
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="page2" class="container"
+            <section class="white" class="container"
             data-0="top:0%;"
             data-12900="opacity:0;"
             data-13100="opacity:1;">
@@ -273,32 +336,32 @@
                         <div class="inner"
                         data-13500="opacity:0;"
                         data-13700="opacity:1;">
-                            <p><span class="attn">17.5%</span> Never</p>
+                            <p><span class="bold">17.5%</span> Never</p>
                         </div>
                         <div class="inner"
                         data-13600="opacity:0;"
                         data-13800="opacity:1;">
-                            <p><span class="attn">33.3%</span> Rarely</p>
+                            <p><span class="bold">33.3%</span> Rarely</p>
                         </div>
                         <div class="inner"
                         data-13700="opacity:0;"
                         data-13900="opacity:1;">
-                            <p><span class="attn">31.6%</span> Sometimes</p>
+                            <p><span class="bold">31.6%</span> Sometimes</p>
                         </div>
                         <div class="inner"
                         data-13800="opacity:0;"
                         data-14000="opacity:1;">
-                            <p><span class="attn">10.8%</span> Semi-frequently</p>
+                            <p><span class="bold">10.8%</span> Semi-frequently</p>
                         </div>
                         <div class="inner"
                         data-13900="opacity:0;"
                         data-14100="opacity:1;">
-                            <p><span class="attn">6.7%</span> Frequently</p>
+                            <p><span class="bold">6.7%</span> Frequently</p>
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="page2" class="container"
+            <section class="white" class="container"
             data-0="top:0%;"
             data-14800="opacity:0;"
             data-15000="opacity:1;">
@@ -315,12 +378,12 @@
                         <div class="inner"
                         data-15400="opacity:0;"
                         data-15600="opacity:1;">
-                            <p>graph</p>
+                            <div class="canvas"><canvas id='futureGraph'></canvas></div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="page2" class="container"
+            <section class="white" class="container"
             data-0="top:0%;"
             data-16300="opacity:0;"
             data-16500="opacity:1;">
@@ -337,32 +400,32 @@
                         <div class="inner"
                         data-16900="opacity:0;"
                         data-17100="opacity:1;">
-                            <p><span class="attn">46.1%</span> Every 0 - 2 months</p>
+                            <p><span class="bold">46.1%</span> Every 0 - 2 months</p>
                         </div>
                         <div class="inner"
                         data-17000="opacity:0;"
                         data-17200="opacity:1;">
-                            <p><span class="attn">35.7%</span> Every 2 - 3 months</p>
+                            <p><span class="bold">35.7%</span> Every 2 - 3 months</p>
                         </div>
                         <div class="inner"
                         data-17100="opacity:0;"
                         data-17300="opacity:1;">
-                            <p><span class="attn">10.8%</span> Every 4 - 5 months</p>
+                            <p><span class="bold">10.8%</span> Every 4 - 5 months</p>
                         </div>
                         <div class="inner"
                         data-17200="opacity:0;"
                         data-17400="opacity:1;">
-                            <p><span class="attn">5.4%</span> Every 6 - 11 months</p>
+                            <p><span class="bold">5.4%</span> Every 6 - 11 months</p>
                         </div>
                         <div class="inner"
                         data-17300="opacity:0;"
                         data-17500="opacity:1;">
-                            <p><span class="attn">2%</span> Every 12+ months</p>
+                            <p><span class="bold">2%</span> Every 12+ months</p>
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="page2" class="container"
+            <section class="white" class="container"
             data-0="top:0%;"
             data-18200="opacity:0;"
             data-18400="opacity:1;">
@@ -379,27 +442,27 @@
                         <div class="inner"
                         data-18800="opacity:0;"
                         data-19000="opacity:1;">
-                            <p><span class="attn">69%</span> Cost of travel</p>
+                            <p><span class="bold">69%</span> Cost of travel</p>
                         </div>
                         <div class="inner"
                         data-18900="opacity:0;"
                         data-19100="opacity:1;">
-                            <p><span class="attn">56.6%</span> Schoolwork</p>
+                            <p><span class="bold">56.6%</span> Schoolwork</p>
                         </div>
                         <div class="inner"
                         data-19000="opacity:0;"
                         data-19200="opacity:1;">
-                            <p><span class="attn">41.1%</span> Extracurricular activites and/or jobs</p>
+                            <p><span class="bold">41.1%</span> Extracurricular activites and/or jobs</p>
                         </div>
                         <div class="inner"
                         data-19100="opacity:0;"
                         data-19300="opacity:1;">
-                            <p><span class="attn">40.1%</span> Incompatible school schedules</p>
+                            <p><span class="bold">40.1%</span> Incompatible school schedules</p>
                         </div>
                         <div class="inner"
                         data-19200="opacity:0;"
                         data-19400="opacity:1;">
-                            <p><span class="attn">38%</span> Travel time</p>
+                            <p><span class="bold">38%</span> Travel time</p>
                         </div>
                     </div>
                 </div>
@@ -421,6 +484,8 @@
                             <p>Despite our fears, anxieties, distance, and difficulties, we're optimistic we'll make it through.</p>
                             <div style="font-size:.75em;">
                                 Photos by Min Yi Tan, Alison Graham, Alison Graham, Min Yi Tan
+                                <br>
+                                Icons by NAME GOES HERE DONT FORGET ME
                                 <br>
                                 Survey by Emma Pinsky, Moira Lavelle, and Kayden Mimmack
                                 <br>
@@ -445,16 +510,18 @@
         easing: {
             /* mod 1 to repeat. The 0.2 is for 200p in box, change accordingly*/
             custom4: function(p) {
-                return (4 * p)%1.2;
+                return (4 * p);
             },
             custom12: function(p) {
-                return (12 * p)%1.2;
+                return (12 * p);
             },
             custom8: function(p) {
-                return (8 * p)%1.2;
+                console.log (8*p);
+                return (8 * p);
             },
 		}
     });
   </script>
+
 </body>
 </html>
