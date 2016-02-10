@@ -15,7 +15,30 @@
 }
 
 #skrollr-body {
-    min-height: 1px;
+	width: 100%;
+	height: 100%;
+    overflow:visible;
+    position:relative;
+}
+
+.scene {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+.sky {
+    height: 200px;
+    background: #8cc9dc
+}
+
+.sky-inner {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    min-height: 200px;
+    overflow: hidden
 }
 
 .img-left  {
@@ -85,7 +108,7 @@ p {
 }
 
 .container {
-	position: relative;
+	position: fixed;
 	height: 100%;
 	width: 100%;
 	margin: 0 auto;
@@ -116,15 +139,12 @@ p {
     background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
     background: -moz-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
 }
 
 .border {
-	position: absolute;
+	position: relative;
     top: 0;
     left: 0;
     right:0;
