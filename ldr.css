@@ -166,6 +166,11 @@ p {
 	background-position: 50% 50%;
 }
 
+#intro-body {
+	height:100%;
+	width:100%;
+}
+
 #communication-title {
 	background-image:url("girlonphone.jpg");
 	background-size: 100vw;
