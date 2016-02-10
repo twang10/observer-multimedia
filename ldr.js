@@ -3,12 +3,36 @@ $(document).ready(function(){
 });
 
 function drawGraphs() {
-    techGraph();
+    var data1 = {
+      "Texting": 81.5,
+      "IM Apps": 61.3,
+      "Vid Chat": 75.1,
+      "Phone Call": 66.7,
+      "Snapchat": 62.6,
+      "Instagram": 10.8,
+      "Couple App": 8.1,
+      "Letters": 1,
+      "Email": 7.4
+    };
+
+    var data2 = {
+      "Texting": 41.5,
+      "IM Apps": 31.3,
+      "Vid Chat": 25.1,
+      "Phone Call": 36.7,
+      "Snapchat": 32.6,
+      "Instagram": 5.8,
+      "Couple App": 4.1,
+      "Letters": .5,
+      "Email": 2
+    };
+    techGraph("c", data1);
+    techGraph("d", data2);
 }
 
-function techGraph() {
+function techGraph(loc, data) {
     var label = document.querySelector(".label");
-    var c = document.getElementById("c");
+    var c = document.getElementById(loc);
     var ctx = c.getContext("2d");
     var cw = c.width = 1000;
     var ch = c.height = 450;
@@ -26,17 +50,7 @@ function techGraph() {
     //grd.addColorStop(0, "hsla(0, 100%, 71%, 1)");
     //grd.addColorStop(1, "hsla(0, 100%, 71%, 0)");
 
-    var oData = {
-      "Texting": 81.5,
-      "IM Apps": 61.3,
-      "Vid Chat": 75.1,
-      "Phone Call": 66.7,
-      "Snapchat": 62.6,
-      "Instagram": 10.8,
-      "Couple App": 8.1,
-      "Letters": 1,
-      "Email": 7.4
-    };
+    var oData = data;
 
     var valuesRy = [];
     var propsRy = [];
@@ -88,7 +102,7 @@ ctx.stroke();
 // vertical ( A - B )
 var aStep = (chartHeight - 50) / (vData);
 
-var Max = Math.ceil(arrayMax(valuesRy) / 10) * 10;
+var Max = Math.ceil(90 / 10) * 10;
 var Min = Math.floor(arrayMin(valuesRy) / 10) * 10;
 var aStepValue = (Max - Min) / (vData);
 var verticalUnit = aStep / aStepValue;
