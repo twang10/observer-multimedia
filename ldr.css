@@ -21,39 +21,48 @@
     position:relative;
 }
 
-.scene {
-	position: fixed;
-	width: 100%;
-	height: 100%;
+.animate-right-0 {
+	text-align:right;
+	max-width:1080px;
+	margin:auto;
+	margin-right:40px;
+	position: absolute;
+	width:100%;
+	height:100vh;
+	top:70vh;
+}
+.animate-right-30 {
+	text-align:right;
+	max-width:1080px;
+	margin:auto;
+	margin-right:40px;
+	position: absolute;
+	width:100%;
+	height:100vh;
+	top:40vh;
+}
+.animate-left-0 {
+	text-align:left;
+	max-width:1080px;
+	margin:auto;
+	position: absolute;
+	width:100%;
+	height:100vh;
+	top:70vh;
+}
+.animate-left-30 {
+	text-align:left;
+	max-width:1080px;
+	margin:auto;
+	position: absolute;
+	width:100%;
+	height:100vh;
+	top:40vh;
 }
 
-.sky {
-    height: 200px;
-    background: #8cc9dc
-}
 
-.sky-inner {
-    width: 1000px;
-    height: 100%;
-    margin: 0 auto;
-    position: relative;
-    min-height: 200px;
-    overflow: hidden
-}
-
-.img-left  {
-	position: relative;
-	right: 0;
-	bottom: 0;
-	height:10em;
-	width:auto;
-}
-
-.img-right {
-	position: relative;
-	right: 0;
-	bottom: 0;
-	height:10em;
+img {
+	height:30vh;
 	width:auto;
 }
 
@@ -122,6 +131,8 @@ p {
 }
 
 .wrapper {
+	max-width:1080px;
+	margin: auto;
 	padding:20px;
 }
 
@@ -186,12 +197,22 @@ p {
 	background-position: 50% 50%;
 }
 
+#communication-body {
+	height:100%;
+	width:100%;
+}
+
 #distance-title {
 	background-image:url("tent.jpg");
 	background-size: 100vw;
 	background-repeat: no-repeat;
 	color:white;
 	background-position: 50% 50%;
+}
+
+#distance-body {
+	height:100%;
+	width:100%;
 }
 
 #endpage {
@@ -206,7 +227,7 @@ p {
 	width:100%;
 	height:100%;
     background:black;
-	color:white;
+	color:#f3f3f3;
 }
 
 .white {
