@@ -9,118 +9,7 @@
   <script src="ldr.js"></script>
 </head>
 <body>
-    <!--
-    <div id="mobile-body" style="display:none;">
-        <div id="intro-title-m">
-            <div id="gradient" style="top:0;">
-                <h1>How does Tufts do long distance?</h1>
-                <p>
-                    The Tufts Observer surveyed nearly 300 students on their long-distance
-                    relationships, past and present. Scroll through to see how we think, talk,
-                    fight, and love one another when we're miles, states, or oceans apart.
-                </p>
-            </div>
-        </div>
-        <section class="black-m" style="top:100vh;">
-            <p class="left">
-                The average distance separating us from our siginifcant others is
-                <span class="notice-me">1,854</span> miles.
-            </p>
-            <p class="left">The farthest-separated couple is <span class="notice-me">12,000</span> miles apart.</p>
-        </section>
-        <section class="white-m" style="top:200vh;">
-            <p class="right">
-                <span class="notice-me">18%</span> of long-distance couples have spent
-                nearly their entire relationship apart so far.
-            </p>
-            <p class="right">
-                The longest-separated couple has been long-distance for
-                <span class="notice-me">5.8</span> years.
-            </p>
-        </section>
-        <section class="black-m" style="top:300vh;">
-            <p class="left">
-                The average long-distance relationship breaks up after
-                 <span class="notice-me">8.9</span> months of separation.
-             </p>
-            <p class="right">
-                <span class="notice-me">60.6%</span>
-                of respondants have had the legitimacy of their relationship questioned due
-                to it being long-distance.
-            </p>
-        </section>
-        <div id="communication-title-m" style="top:400vh;">
-            <h1>How do we communicate?</h1>
-        </div>
-        <section class="black-m" style="top:500vh;">
-            <p class="left">
-                <span class="notice-me">52%</span> of respondants said their communication
-                skills improved as a result of being in a long-distance relationship.
-            </p>
-        </section>
-        <section class="black-m" style="top:600vh;">
-            <h2>Technology we use</h2>
-        </section>
-        <section class="black-m" style="top:700vh;">
-            <h2>What we fight about</h2>
-            <p><span class="bold">29.64%</span> Quality of communication</p>
-            <p><span class="bold">21.68%</span> Frequency of communication</p>
-            <p><span class="bold">14.16%</span> Whether or not to stay together</p>
-            <p><span class="bold">13.94%</span> Jealousy (fear of our SO forming other meaningful relationships)</p>
-            <p><span class="bold">10.62%</span> Jealousy (fear of infidelity)</p>
-            <p><span class="bold">9.96%</span> Frequency of visits and who visits whom</p>
-        </section>
-        <div id="distance-title-m" style="top:800vh;">
-            <h1>How does distance affect our relationships?</h1>
-        </div>
-        <section class="white-m" style="top:900vh;">
-            <p class="left"><span class="notice-me">13.5%</span> of long-distance relationships are non-monogamous.</p>
-        </section>
-        <section class="white-m" style="top:1000vh;">
-            <h2>How often we have sexual thoughts about other people</h2>
-            <p><span class="bold">17.5%</span> Never</p>
-            <p><span class="bold">33.3%</span> Rarely</p>
-            <p><span class="bold">31.6%</span> Sometimes</p>
-            <p><span class="bold">10.8%</span> Semi-frequently</p>
-            <p><span class="bold">6.7%</span> Frequently</p>
-        </section>
-        <section class="white-m" style="top:1100vh;">
-            <h2>Who we worry more about our significant others cheating with</h2>
-            <p><span class="bold">62.1%</span> Close friends</p>
-            <p><span class="bold">37.1%</span> Random hookups</p>
-        </section>
-        <section class="white-m" style="top:1200vh;">
-            <h2>How often we visit each other</h2>
-            <p><span class="bold">46.1%</span> Every 0 - 2 months</p>
-            <p><span class="bold">35.7%</span> Every 2 - 3 months</p>
-            <p><span class="bold">10.8%</span> Every 4 - 5 months</p>
-            <p><span class="bold">5.4%</span> Every 6 - 11 months</p>
-            <p><span class="bold">2%</span> Every 12+ months</p>
-        </section>
-        <section class="white-m" style="top:1300vh;">
-            <h2>What's preventing us from visiting our significant others</h2>
-            <p><span class="bold">69%</span> Cost of travel</p>
-            <p><span class="bold">56.6%</span> Schoolwork</p>
-            <p><span class="bold">41.1%</span> Extracurricular activites and/or jobs</p>
-            <p><span class="bold">40.1%</span> Incompatible school schedules</p>
-            <p><span class="bold">38%</span> Travel time</p>
-        </section>
-        <div id="endpage-m" style="top:1400vh;">
-            <h1>73.7%</h1>
-            <h2>of long-distance couples are confident their relationship will last another year.</h2>
-            <p>Despite our fears, anxieties, distance, and difficulties, we're optimistic we'll make it through.</p>
-            <div style="font-size:.75em;">
-                Photos by Min Yi Tan, Alison Graham, Alison Graham, Min Yi Tan
-                <br>
-                Icons by Olha Filipenko
-                <br>
-                Survey by Emma Pinsky, Moira Lavelle, and Kayden Mimmack
-                <br>
-                Development and design by Kayden Mimmack
-            </div>
-        </div>
-    </div> -->
-    <!--<div id="skrollr-body" style="display:none;"> -->
+    <div id="bd">
         <div id="intro-title" class="container"
         data-0="top:0%;"
         data-1000="opacity:1;"
@@ -630,34 +519,24 @@
                 </div>
             </div>
         </div>
-
-<!--</div>-->
+    </div>
 
     <script src="skrollr.js"></script>
     <script>
         var box = $('#hello'),
         boxDone = false;
-        var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
-        //if((w <= 767)){
-        //    document.getElementById("skrollr-body").style.display = "none";
-        //    document.getElementById("mobile-body").style.display = "block";
-    //    }
-        //else {
-            skrollr.init({
-                render: function() {
-        //        document.getElementById("mobile-body").style.display = "none";
-        //        document.getElementById("skrollr-body").style.display = "block";
-                    if ( box.hasClass('skrollable-after') ) {
-                        if ( ! boxDone ) {
-                            boxDone = true;
-                            drawGraphs();
-                        }
-                    } else if ( boxDone ) {
-                        boxDone = false;
+        skrollr.init({
+            render: function() {
+                if ( box.hasClass('skrollable-after') ) {
+                    if ( ! boxDone ) {
+                        boxDone = true;
+                        drawGraphs();
                     }
+                } else if ( boxDone ) {
+                    boxDone = false;
                 }
-            });
-        //}
+            }
+        });
     </script>
 
 </body>

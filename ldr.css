@@ -14,18 +14,11 @@
 	position:static;
 }
 
-#skrollr-body {
+#bd {
 	width: 100%;
 	height: 100%;
     overflow:visible;
     position:relative;
-}
-
-#mobile-body {
-	width: 100%;
-	height:100%;
-	position:absolute;
-	margin:0;
 }
 
 .animate-right-0 {
@@ -354,75 +347,7 @@ svg {
 	    border-width:2px;
 	    border-color:white;
 	    margin:10px;
-	}
-
-	#intro-title-m {
-		background-image:url("bus.jpg");
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		background-position: 50% 50%;
-		color:white;
-		height:100vh;
-		width:100%;
-		position:absolute;
-		top:0;
-	}
-	#communication-title-m {
-		background-image:url("girlonphone.jpg");
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		background-position: 50% 50%;
-		color:white;
-		height:100vh;
-		width:100%;
-		position:absolute;
-		top:0;
-	}
-	#endpage-m{
-		background-image:url("couple.jpg");
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		background-position: 50% 50%;
-		color:white;
-		height:100vh;
-		width:100%;
-		position:absolute;
-		top:0;
-	}
-	#distance-title-m {
-		background-image:url("tent.jpg");
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		background-position: 50% 50%;
-		color:white;
-		height:100vh;
-		width:100%;
-		position:absolute;
-		top:0;
-	}
-	.black-m {
-		position:absolute;
-		height:100vh;
-		width:100%;
-	    background:black;
-		color:#f3f3f3;
-	}
-
-	.white-m {
-		position:absolute;
-		height:100vh;
-		width:100%;
-		background:#f3f3f3;
-		color:black;
-	} */
+	}*/
 
 	#intro-title {
 		background-image:url("bus.jpg") no-repeat center center;
