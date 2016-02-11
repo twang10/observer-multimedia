@@ -1,30 +1,30 @@
-$('#hello').on('eventName', function(){
+$('#commGraph').on('eventName', function(){
     drawGraphs();
 });
 
 function drawGraphs() {
     var data1 = {
-      "Texting": 81.5,
-      "IM Apps": 61.3,
-      "Vid Chat": 75.1,
-      "Phone Call": 66.7,
-      "Snapchat": 62.6,
-      "Instagram": 10.8,
-      "Couple App": 8.1,
-      "Letters": 1,
-      "Email": 7.4
+        "Texting": 81.5,
+        "IM Apps": 61.3,
+        "Vid Chat": 75.1,
+        "Phone Call": 66.7,
+        "Snapchat": 62.6,
+        "Instagram": 10.8,
+        "Couple App": 8.1,
+        "Letters": 1,
+        "Email": 7.4
     };
 
     var data2 = {
-      "Texting": 56.2,
-      "IM Apps": 21.9,
-      "Vid Chat": 9.4,
-      "Phone Call": 8.4,
-      "Snapchat": 2.4,
-      "Instagram": 0.3,
-      "Couple App": 1,
-      "Letters": 0.3,
-      "Email": 0
+        "Texting": 56.2,
+        "IM Apps": 21.9,
+        "Vid Chat": 9.4,
+        "Phone Call": 8.4,
+        "Snapchat": 2.4,
+        "Instagram": 0.3,
+        "Couple App": 1,
+        "Letters": 0.3,
+        "Email": 0
     };
     techGraph("c", data1);
     techGraph("d", data2);
