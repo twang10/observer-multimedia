@@ -310,7 +310,7 @@ svg {
 	}
 
 	#intro-title {
-		background-image:url("bus.jpg") no-repeat center center fixed;
+		background-image:url("bus.jpg") no-repeat center center;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -320,7 +320,7 @@ svg {
 	}
 
 	#communication-title {
-		background-image:url("girlonphone.jpg") no-repeat center center fixed;
+		background-image:url("girlonphone.jpg") no-repeat center center;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -330,7 +330,7 @@ svg {
 	}
 
 	#distance-title {
-		background-image:url("tent.jpg") no-repeat center center fixed;
+		background-image:url("tent.jpg") no-repeat center center;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -340,7 +340,7 @@ svg {
 	}
 
 	#endpage {
-		background-image:url("couple.jpg") no-repeat center center fixed;
+		background-image:url("couple.jpg") no-repeat center center;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
