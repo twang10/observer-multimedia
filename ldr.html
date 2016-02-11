@@ -638,14 +638,14 @@
         var box = $('#hello'),
         boxDone = false;
         var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
-        if((w <= 767)){
+        //if((w <= 767)){
         //    document.getElementById("skrollr-body").style.display = "none";
-            document.getElementById("mobile-body").style.display = "block";
-        }
-        else {
+        //    document.getElementById("mobile-body").style.display = "block";
+    //    }
+        //else {
             skrollr.init({
                 render: function() {
-                document.getElementById("mobile-body").style.display = "none";
+        //        document.getElementById("mobile-body").style.display = "none";
         //        document.getElementById("skrollr-body").style.display = "block";
                     if ( box.hasClass('skrollable-after') ) {
                         if ( ! boxDone ) {
@@ -657,7 +657,7 @@
                     }
                 }
             });
-        }
+        //}
     </script>
 
 </body>

@@ -316,7 +316,7 @@ svg {
 		font-size:1em;
 	}
 
-
+	/*
 	.container {
 		text-align:center;
 		height: 100%;
@@ -422,6 +422,16 @@ svg {
 		width:100%;
 		background:#f3f3f3;
 		color:black;
+	} */
+
+	#intro-title {
+		background-image:url("bus.jpg") no-repeat center center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		background-position: 50% 50%;
+		color:white;
 	}
 
 	#communication-title {
@@ -432,6 +442,7 @@ svg {
 		background-size: cover;
 		background-position: 50% 50%;
 		color:white;
+
 	}
 
 	#distance-title {
