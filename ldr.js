@@ -1,4 +1,8 @@
 $(document).ready(function(){
+    //drawGraphs();
+});
+
+$('#hello').on('eventName', function(){
     drawGraphs();
 });
 
@@ -16,18 +20,20 @@ function drawGraphs() {
     };
 
     var data2 = {
-      "Texting": 41.5,
-      "IM Apps": 31.3,
-      "Vid Chat": 25.1,
-      "Phone Call": 36.7,
-      "Snapchat": 32.6,
-      "Instagram": 5.8,
-      "Couple App": 4.1,
-      "Letters": .5,
-      "Email": 2
+      "Texting": 56.2,
+      "IM Apps": 21.9,
+      "Vid Chat": 9.4,
+      "Phone Call": 8.4,
+      "Snapchat": 2.4,
+      "Instagram": 0.3,
+      "Couple App": 1,
+      "Letters": 0.3,
+      "Email": 0
     };
-    techGraph("c", data1);
-    techGraph("d", data2);
+    //techGraph("c", data1);
+    //techGraph2("c", data1, data2);
+    //lifetimeGraph();
+    visitGraph();
 }
 
 function techGraph(loc, data) {
@@ -311,7 +317,7 @@ function oMousePos(canvas, evt) {
   }
 }
 }
-/*
+
 function lifetimeGraph() {
     var data = {
         labels: ["0", "", "", "", "", "5", "", "", "", "", "10",
@@ -335,57 +341,43 @@ function lifetimeGraph() {
         ]
     };
 
-    var ctx = document.getElementById("lifetimeGraph").getContext("2d");
+    var ctx = document.getElementById("c").getContext("2d");
     var myBarChart = new Chart(ctx).Line(data, {
         scaleShowGridLines : false,
-        pointDot : false,
-        datasetStroke : false,
-        showTooltips: false,
-        responsive:false
+        pointDot : true,
+        datasetStroke : true,
+        showTooltips: true,
+        responsive:true
     });
 }
+
 
 function visitGraph() {
-    var data = [
-        {
-            label: "0 - 1 Months",
-            value: 50,
-            color: "rgba(220,220,220,0.6)",
-            highlight: "rgba(220,220,220,1)"
-        },
-        {
-            label: "2 - 3 Months",
-            value: 42,
-            color:"rgba(220,220,220,0.6)",
-            highlight: "rgba(220,220,220,1)"
-        },
-        {
-            label: "4 - 5 Months",
-            value: 7,
-            color: "rgba(220,220,220,0.6)",
-            highlight: "rgba(220,220,220,1)",
-        },
-        {
-            label: "6 - 11 Months",
-            value: 4,
-            color: "rgba(220,220,220,0.6)",
-            highlight: "rgba(220,220,220,1)"
-        },
-        {
-            label: "12+ Months",
-            value: 4,
-            color: "rgba(220,220,220,0.6)",
-            highlight: "rgba(220,220,220,1)"
-        }
-    ];
+    var chartData = {
+        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        datasets: [
+            {
+                label: "My Second dataset",
+                fillColor: "rgba(151,187,205,0.2)",
+                strokeColor: "rgba(151,187,205,1)",
+                pointColor: "rgba(151,187,205,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(151,187,205,1)",
+                data: [28, 48, 40, 19, 86, 27, 90]
+            }
+        ]
+    };
 
-    var ctx = document.getElementById("visitGraph").getContext("2d");
-    new Chart(ctx).Doughnut(data, {
-        segmentStrokeColor : "#fff", // can change to be bg color later
-        animateRotate : false,
-        responsive:false
-    });
+
+        var ctx = document.getElementById("c").getContext("2d");
+        window.myNewChart = new Chart(ctx).Line(chartData, {
+            showTooltip: true,
+            responsive:false,
+            tooltipTemplate: "<%= value %>"
+        });
 }
+/*
 
 function factorsGraph() {
     var data = [
@@ -588,5 +580,4 @@ function jealousGraph() {
         responsive:false
     });
 }
-
-*/
+ */
