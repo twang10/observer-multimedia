@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Trans Healthcare</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body style="display:none;">
+    <div class="tester">
+        <h1>"Hello"</h1>
+    </div>
+        <div class="article"
+        data-0="transform:translate(-100%,0%);"
+        data-50p="transform:translate(0%,0%);"
+        data-60p="transform:translate(0%,0%);@Yscrollable:false;"
+        data-70p="transform:translate(0%,-10%); @Yscrollable:true;"
+        data-100p="opacity:1;">
+            <p>
+                <span class="bar"></span>
+                Lorem ipsum dolor sit amet, altera intellegat moderatius qui eu, no nec omnesque senserit. Ut sea dicant tacimates mediocrem, animal elaboraret interpretaris ut eam, an mea modo viderer dolores. Et sit vitae iudico timeam, id brute graece repudiare pri. Summo solet torquatos nec ad, ad est movet efficiantur. At simul fabellas pri, ei quo dico melius eligendi.Lorem ipsum dolor sit amet, altera intellegat moderatius qui eu, no nec omnesque senserit. Ut sea dicant
+            </p>
+            <p>
+                <span class="bar"></span>
+                tacimates mediocrem, animal elaboraret interpretaris ut eam, an mea modo viderer dolores. Et sit vitae iudico timeam, id brute graece repudiare pri. Summo solet torquatos nec ad, ad est movet efficiantur. At simul fabellas pri, ei quo dico melius eligendi.Lorem ipsum dolor sit amet, altera intellegat moderatius qui eu, no nec omnesque senserit. Ut sea dicant tacimates mediocrem, animal elaboraret interpretaris ut eam, an mea modo viderer dolores. Et sit vitae iudico timeam, id brute graece repudiare pri. Summo solet torquatos nec ad, ad est movet efficiantur. At simul fabellas pri, ei quo dico melius eligendi.Lorem ipsum dolor sit amet, altera intellegat moderatius qui eu, no nec omnesque senserit. Ut sea dicant
+            </p>
+            <p>
+                <span class="bar"></span>
+                tacimates mediocrem, animal elaboraret interpretaris ut eam, an mea modo viderer dolores. Et sit vitae iudico timeam, id brute graece repudiare pri. Summo solet torquatos nec ad, ad est movet efficiantur. At simul fabellas pri, ei quo dico melius eligendi.Lorem ipsum dolor sit amet, altera intellegat moderatius qui eu, no nec omnesque senserit. Ut sea dicant
+            </p>
+            <p>
+                acimates mediocrem, animal elaboraret interpretaris ut eam, an mea modo viderer dolores. Et sit vitae iudico timeam, id brute graece repudiare pri. Summo solet torquatos nec ad, ad est movet efficiantur. At simul fabellas pri, ei quo dico melius eligendi.Lorem ipsum dolor sit amet, altera intellegat moderatius qui eu, no nec omnesque senserit. Ut sea dicant tacimates mediocrem, animal elaboraret interpretaris ut eam, an mea modo viderer dolores. Et sit vitae iudico timeam, id
+            </p>
+            <p>
+                brute graece repudiare pri. Summo solet torquatos nec ad, ad est movet efficiantur. At simul fabellas pri, ei quo dico melius eligendi.Lorem ipsum dolor sit amet, altera intellegat moderatius qui eu, no nec omnesque senserit. Ut sea dicant tacimates mediocrem, animal elaboraret interpretaris ut eam, an mea modo viderer dolores. Et sit vitae iudico timeam, id brute graece repudiare pri. Summo solet torquatos nec ad, ad est movet efficiantur. At simul fabellas pri, ei quo dico
+            </p>
+            <p>
+                melius eligendi.Lorem ipsum dolor sit amet, altera intellegat moderatius qui eu, no nec omnesque senserit. Ut sea dicant tacimates mediocrem, animal elaboraret interpretaris ut eam, an mea modo viderer dolores. Et sit vitae iudico timeam, id brute graece repudiare pri. Summo solet torquatos nec ad, ad est movet efficiantur. At simul fabellas pri, ei quo dico melius eligendi.Lorem ipsum dolor sit amet, altera intellegat moderatius qui eu, no nec omnesque senserit. Ut sea dicant tacimates mediocrem, animal elaboraret interpretaris ut eam, an mea modo viderer dolores. Et sit vitae iudico timeam, id brute graece repudiare pri. Summo solet torquatos nec ad, ad est movet efficiantur. At simul fabellas pri, ei quo dico melius eligendi.
+            </p>
+        </div>
+    </div>
+    <script src="skrollr.js"></script>
+    <script>
+
+        /*don't scroll animations on small window widths*/
+        if ($(window).width() > 767) {
+            skrollr.init();
+        }
+        $(window).on('resize', function () {
+            if ($(window).width() <= 767) {
+                skrollr.init().destroy();
+            }
+            else skrollr.init();
+        });
+
+         $("body").fadeIn(2000);
+    </script>
+</body>
+</html>
