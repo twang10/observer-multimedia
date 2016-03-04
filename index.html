@@ -44,11 +44,15 @@
     <script>
 
         /*don't scroll animations on small window widths*/
-        if ($(window).width() > 767) {
+        if ($(window).width() > 767 && $(window).width() >= $(window).height()) {
+            // initial load
+            // large width and landscape
             skrollr.init();
         }
+
         $(window).on('resize', function () {
-            if ($(window).width() <= 767) {
+            if (window.matchMedia('(max-width: 767px)').matches || window.matchMedia('(orientation: portrait)').matches) {
+                // small width or portrait
                 skrollr.init().destroy();
             }
             else skrollr.init();
