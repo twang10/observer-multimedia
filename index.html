@@ -25,6 +25,9 @@
     <div class="fixed-wrapper">
         <h1>&#8220I am a fancy pull quote. Lookie me! Loosie Goosie...&#8221</h1>
     </div>
+    <div class="fixed-wrapper">
+        <div class="arrow-wrapper"><span class="arrow"></span></div>
+    </div>
     <div class="article"
     data-0="transform:translate(-100%,0%);"
     data-50p="transform:translate(0%,0%);"
@@ -43,19 +46,22 @@
             <span class="bar"></span>
             tacimates mediocrem, animal elaboraret interpretaris ut eam, an mea modo viderer dolores. Et sit vitae iudico timeam, id brute graece repudiare pri. Summo solet torquatos nec ad, ad est movet efficiantur. At simul fabellas pri, ei quo dico melius eligendi.Lorem ipsum dolor sit amet, altera intellegat moderatius qui eu, no nec omnesque senserit. Ut sea dicant
         </p>
-        <p>
-            acimates mediocrem, animal elaboraret interpretaris ut eam, an mea modo viderer dolores. Et sit vitae iudico timeam, id brute graece repudiare pri. Summo solet torquatos nec ad, ad est movet efficiantur. At simul fabellas pri, ei quo dico melius eligendi.Lorem ipsum dolor sit amet, altera intellegat moderatius qui eu, no nec omnesque senserit. Ut sea dicant tacimates mediocrem, animal elaboraret interpretaris ut eam, an mea modo viderer dolores. Et sit vitae iudico timeam, id
-        </p>
-        <p>
-            brute graece repudiare pri. Summo solet torquatos nec ad, ad est movet efficiantur. At simul fabellas pri, ei quo dico melius eligendi.Lorem ipsum dolor sit amet, altera intellegat moderatius qui eu, no nec omnesque senserit. Ut sea dicant tacimates mediocrem, animal elaboraret interpretaris ut eam, an mea modo viderer dolores. Et sit vitae iudico timeam, id brute graece repudiare pri. Summo solet torquatos nec ad, ad est movet efficiantur. At simul fabellas pri, ei quo dico
-        </p>
-        <p>
-            melius eligendi.Lorem ipsum dolor sit amet, altera intellegat moderatius qui eu, no nec omnesque senserit. Ut sea dicant tacimates mediocrem, animal elaboraret interpretaris ut eam, an mea modo viderer dolores. Et sit vitae iudico timeam, id brute graece repudiare pri. Summo solet torquatos nec ad, ad est movet efficiantur. At simul fabellas pri, ei quo dico melius eligendi.Lorem ipsum dolor sit amet, altera intellegat moderatius qui eu, no nec omnesque senserit. Ut sea dicant tacimates mediocrem, animal elaboraret interpretaris ut eam, an mea modo viderer dolores. Et sit vitae iudico timeam, id brute graece repudiare pri. Summo solet torquatos nec ad, ad est movet efficiantur. At simul fabellas pri, ei quo dico melius eligendi.
-        </p>
         <div class="spacer"></div>
         <p id="anchor1">~~~~~~~~</p>
         <div class="backup-img"></div>
         <div class="spacer"></div>
+        <p>
+            <span class="bar"></span>
+            Lorem ipsum dolor sit amet, altera intellegat moderatius qui eu, no nec omnesque senserit. Ut sea dicant tacimates mediocrem, animal elaboraret interpretaris ut eam, an mea modo viderer dolores. Et sit vitae iudico timeam, id brute graece repudiare pri. Summo solet torquatos nec ad, ad est movet efficiantur. At simul fabellas pri, ei quo dico melius eligendi.Lorem ipsum dolor sit amet, altera intellegat moderatius qui eu, no nec omnesque senserit. Ut sea dicant
+        </p>
+        <p>
+            <span class="bar"></span>
+            tacimates mediocrem, animal elaboraret interpretaris ut eam, an mea modo viderer dolores. Et sit vitae iudico timeam, id brute graece repudiare pri. Summo solet torquatos nec ad, ad est movet efficiantur. At simul fabellas pri, ei quo dico melius eligendi.Lorem ipsum dolor sit amet, altera intellegat moderatius qui eu, no nec omnesque senserit. Ut sea dicant tacimates mediocrem, animal elaboraret interpretaris ut eam, an mea modo viderer dolores. Et sit vitae iudico timeam, id brute graece repudiare pri. Summo solet torquatos nec ad, ad est movet efficiantur. At simul fabellas pri, ei quo dico melius eligendi.Lorem ipsum dolor sit amet, altera intellegat moderatius qui eu, no nec omnesque senserit. Ut sea dicant
+        </p>
+        <p>
+            <span class="bar"></span>
+            tacimates mediocrem, animal elaboraret interpretaris ut eam, an mea modo viderer dolores. Et sit vitae iudico timeam, id brute graece repudiare pri. Summo solet torquatos nec ad, ad est movet efficiantur. At simul fabellas pri, ei quo dico melius eligendi.Lorem ipsum dolor sit amet, altera intellegat moderatius qui eu, no nec omnesque senserit. Ut sea dicant
+        </p>
         <div class="spacer"></div>
         <div class="spacer"></div>
         <div class="spacer"></div>
@@ -64,28 +70,27 @@
     </div>
     <script src="skrollr.js"></script>
     <script>
-
-        /*don't scroll animations on small window widths*/
+        // don't use scroll animations on small window widths
         if ($(window).width() > 767 && $(window).width() >= $(window).height()) {
-            // initial load
-            // large width and landscape
+            // initial load, large width and landscape
             skrollr.init();
+            setTimeout(function () {
+                /* fix for bug where data anchor target doesn't work */
+                skrollr.get().refresh();
+            }, 0);
+            $("body").fadeIn(3000);
+        } else {
+            $("body").fadeIn(3000);
         }
 
         $(window).on('resize', function () {
             if (window.matchMedia('(max-width: 767px)').matches || window.matchMedia('(orientation: portrait)').matches) {
                 // small width or portrait
                 skrollr.init().destroy();
+            } else {
+                skrollr.init();
             }
-            else skrollr.init();
         });
-
-        /* fix for bug where data anchor target doesn't work */
-        setTimeout(function () {
-            skrollr.get().refresh();
-        }, 0);
-
-        $("body").fadeIn(2000);
     </script>
 </body>
 </html>

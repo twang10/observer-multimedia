@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Vollkorn:400,700italic);
+
 html,
 body {
     font-family: "Vollkorn", serif;
@@ -11,7 +12,6 @@ body {
 }
 
 .fixed-wrapper {
-
     z-index: 1;
     height: 100vh;
     width: 65vw;
@@ -25,13 +25,13 @@ body {
     align-items: center;
     flex-wrap: wrap;
 }
+
 .fixed-img {
     height: 100%;
     width: 100%;
 }
 
 .article {
-
     position: fixed;
     right: 0;
     top: 0;
@@ -47,7 +47,6 @@ body {
 }
 
 .backup-img {
-
     display:none;
     position:relative;
     top:0;
@@ -73,6 +72,37 @@ h1 {
     font-weight: 900;
 }
 
+.arrow-wrapper {
+    padding: 1em;
+    margin: auto auto 0 auto;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/**** arrow credit: http://codepen.io/sampeniak/pen/Imhpy ***/
+.arrow {
+  display: inline-block;
+  width: 4em;
+  height: 4em;
+  border: 0.5em solid #ffffff;
+  border-radius: 50%;
+  margin-left: 0.75em;
+}
+
+.arrow:after {
+  content: '';
+  display: inline-block;
+  margin-top: 0.6em;
+  width: 1.4em;
+  height: 1.4em;
+  border-top: 0.5em solid #ffffff;
+  border-right: 0.5em solid #ffffff;
+  -moz-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
 p {
     padding-left:5em;
     padding-right:5em;
@@ -96,20 +126,22 @@ p {
 
 @media (max-width: 767px) , (orientation: portrait) {
     .fixed-wrapper {
-        width: 100%;
-        position: static;
         display:none;
     }
     .backup-img {
-        display:inline-block;
+        display: inline-block;
     }
     .article {
+        display: inline-block;
         position: static;
         width: 100%;
         height: 100%;
     }
     .article[Yscrollable="true"] {
         position: static;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
     }
 }
 
