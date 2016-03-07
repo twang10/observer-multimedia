@@ -3,15 +3,47 @@
 html,
 body {
     font-family: "Vollkorn", serif;
-    font-weight:400;
+    font-weight: 400;
     background-color: black;
     height: 100%;
     width: 100%;
-    font-size:1em;
+    font-size: 1em;
     line-height: 1.5;
 
     margin:0;
     padding:0;
+}
+
+h1 {
+    font-family: georgia;
+    padding: 1em;
+    color: white;
+    font-size: 3em;
+    font-style: italic;
+    max-width: 100%;
+    font-weight: 900;
+}
+
+p {
+    padding-left: 5em;
+    padding-right: 5em;
+    margin-top: 3em;
+}
+
+.article {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 0;
+    height: 100%;
+    width: 35vw;
+    color: white;
+}
+
+.article[Yscrollable="true"] {
+    position: absolute;
+    top: 70%; /*should match data anchor */
+    right: 0%;
 }
 
 .fixed-wrapper {
@@ -34,77 +66,19 @@ body {
     width: 100%;
 }
 
-.article {
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 0;
-    height: 100%;
-    width: 35vw;
-    color: white;
-}
-.article[Yscrollable="true"] {
-    position: absolute;
-    top: 70%; /*should match data anchor */
-    right: 0%;
-}
-
 .backup-img {
-    display:none;
-    position:relative;
-    top:0;
-    left:0;
-    padding:0;
-    margin:0;
-    width:100%;
-    height:auto;
-}
-
-h1 {
-    font-family:georgia;
-    padding:1em;
-    color: white;
-    font-size: 3em;
-    font-style: italic;
-    max-width: 100%;
-    font-weight: 900;
-}
-
-.arrow-wrapper {
-    padding: 1em;
-    margin: auto auto 0 auto;
     display: inline-block;
-    border-radius: 50%;
-    text-align: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
 }
 
-/**** arrow credit: http://codepen.io/sampeniak/pen/Imhpy ***/
-.arrow {
-  display: inline-block;
-  width: 4em;
-  height: 4em;
-  border: 0.5em solid #ffffff;
-  border-radius: 50%;
-  margin-left: 0.75em;
-}
-
-.arrow:after {
-  content: '';
-  display: inline-block;
-  margin-top: 0.6em;
-  width: 1.4em;
-  height: 1.4em;
-  border-top: 0.5em solid #ffffff;
-  border-right: 0.5em solid #ffffff;
-  -moz-transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-  transform: rotate(135deg);
-}
-
-p {
-    padding-left:5em;
-    padding-right:5em;
-    margin-top:3em;
+.small-only {
+    display:none;
 }
 
 .spacer {
@@ -122,22 +96,58 @@ p {
     padding: 0;
 }
 
+/**** arrow credit: http://codepen.io/sampeniak/pen/Imhpy ***/
+.arrow-wrapper {
+    padding: 1em;
+    margin: auto auto 0 auto;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.arrow {
+    display: inline-block;
+    width: 4em;
+    height: 4em;
+    border: 0.5em solid #ffffff;
+    border-radius: 50%;
+    margin-left: 0.75em;
+}
+
+.arrow:after {
+    content: '';
+    display: inline-block;
+    margin-top: 0.6em;
+    width: 1.4em;
+    height: 1.4em;
+    border-top: 0.5em solid #ffffff;
+    border-right: 0.5em solid #ffffff;
+    -moz-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
 @media (max-width: 767px) , (orientation: portrait) {
-    .fixed-wrapper {
+    .small-only {
+        display:inline;
+    }
+    .large-only {
         display:none;
     }
-    .backup-img {
-        display: inline-block;
-    }
-    .article {
+    .article,
+    .article[Yscrollable="true"] {
         display:inline;
         position: static;
     }
-    .article[Yscrollable="true"] {
-        position: static;
-        display: inline-block;
-        width: 100%;
-        height: 100%;
+    .spacer {
+        height:3em;
+    }
+}
+
+@media (max-width: 500px) , (orientation: portrait) {
+    p {
+        padding-left: 2em;
+        padding-right: 2em;
     }
 }
 

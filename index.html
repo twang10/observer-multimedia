@@ -8,32 +8,36 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body style="display:none;">
-    <div class="fixed-wrapper">
+    <div class="fixed-wrapper large-only">
         <img class="fixed-img"
         data-anchor-target="#anchor1"
         data-0=""
         data--70p-bottom-top="opacity:1;"
-        data--70p-center="opacity:0;" src="img/place1.jpg"/>
+        data--70p-center="opacity:0;"
+        src="img/place1.jpg"/>
     </div>
-    <div class="fixed-wrapper">
+    <div class="fixed-wrapper large-only">
         <img class="fixed-img"
         data-anchor-target="#anchor1"
         data-0=""
         data--70p-bottom-top="opacity:0;"
-        data--70p-center="opacity:1;" src="img/place2.jpg"/>
+        data--70p-center="opacity:1;"
+        src="img/place2.jpg"/>
     </div>
-    <div class="fixed-wrapper">
+    <div class="fixed-wrapper large-only">
         <h1>&#8220I am a fancy pull quote. Lookie me! Loosie Goosie...&#8221</h1>
     </div>
-    <div class="fixed-wrapper">
-        <div class="arrow-wrapper"><span class="arrow"></span></div>
+    <div class="fixed-wrapper large-only">
+        <div class="arrow-wrapper">
+            <span class="arrow"></span>
+        </div>
     </div>
     <div class="article"
     data-0="transform:translate(-100%,0%);"
     data-50p="transform:translate(0%,0%);"
     data-60p="transform:translate(0%,0%); @Yscrollable:false;"
     data-70p="transform:translate(0%,-10%); @Yscrollable:true;">
-        <img class="backup-img" src="img/place1.jpg"></img>
+        <img class="backup-img small-only" src="img/place1.jpg"></img>
         <p>
             <span class="bar"></span>
             Lorem ipsum dolor sit amet, altera intellegat moderatius qui eu, no nec omnesque senserit. Ut sea dicant tacimates mediocrem, animal elaboraret interpretaris ut eam, an mea modo viderer dolores. Et sit vitae iudico timeam, id brute graece repudiare pri. Summo solet torquatos nec ad, ad est movet efficiantur. At simul fabellas pri, ei quo dico melius eligendi.Lorem ipsum dolor sit amet, altera intellegat moderatius qui eu, no nec omnesque senserit. Ut sea dicant
@@ -47,8 +51,8 @@
             tacimates mediocrem, animal elaboraret interpretaris ut eam, an mea modo viderer dolores. Et sit vitae iudico timeam, id brute graece repudiare pri. Summo solet torquatos nec ad, ad est movet efficiantur. At simul fabellas pri, ei quo dico melius eligendi.Lorem ipsum dolor sit amet, altera intellegat moderatius qui eu, no nec omnesque senserit. Ut sea dicant
         </p>
         <div class="spacer"></div>
-        <p id="anchor1">~~~~~~~~</p>
-        <img class="backup-img" src="img/place2.jpg" ></img>
+        <p id="anchor1" class="large-only" style="text-align:center;"> &#9830; </p>
+        <img class="backup-img small-only" src="img/place2.jpg" ></img>
         <div class="spacer"></div>
         <p>
             <span class="bar"></span>
@@ -75,7 +79,7 @@
             // initial load, large width and landscape
             skrollr.init();
             setTimeout(function () {
-                /* fix for bug where data anchor target doesn't work */
+                // fix for bug where data anchor target doesn't work
                 skrollr.get().refresh();
             }, 0);
             $("body").fadeIn(3000);
@@ -84,6 +88,7 @@
         }
 
         $(window).on('resize', function () {
+            // Stops window refreshing when address bar disappears on mobile
             if  (!(navigator.userAgent.match(/Android/i)
              || navigator.userAgent.match(/webOS/i)
              || navigator.userAgent.match(/iPhone/i)
@@ -91,7 +96,7 @@
              || navigator.userAgent.match(/iPod/i)
              || navigator.userAgent.match(/BlackBerry/i)
              || navigator.userAgent.match(/Windows Phone/i)
-            )){
+            )) {
                 if (window.matchMedia('(max-width: 767px)').matches || window.matchMedia('(orientation: portrait)').matches) {
                     // small width or portrait
                     skrollr.init().destroy();
