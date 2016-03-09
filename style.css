@@ -50,6 +50,7 @@ a:hover {
     height: 100%;
     width: 35vw;
     color: black;
+    background-color:white;
 }
 
 .article[Yscrollable="true"] {
@@ -115,35 +116,21 @@ a:hover {
     padding: 0;
 }
 
-/**** arrow credit: http://codepen.io/sampeniak/pen/Imhpy ***/
-.arrow-wrapper {
-    padding: 1em;
-    margin: auto auto 0 auto;
-    display: inline-block;
-    border-radius: 50%;
-    text-align: center;
-}
+.down-arrow {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 0;
 
-.arrow {
-    display: inline-block;
-    width: 4em;
-    height: 4em;
-    border: 0.5em solid #ffffff;
-    border-radius: 50%;
-    margin-left: 0.75em;
-}
+    height: 100%;
+    width: 35vw;
+    color: black;
 
-.arrow:after {
-    content: '';
-    display: inline-block;
-    margin-top: 0.6em;
-    width: 1.4em;
-    height: 1.4em;
-    border-top: 0.5em solid #ffffff;
-    border-right: 0.5em solid #ffffff;
-    -moz-transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-    transform: rotate(135deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size:5em;
 }
 
 @media (max-width: 767px) , (orientation: portrait) {
