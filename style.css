@@ -4,11 +4,10 @@ html,
 body {
     font-family: "Vollkorn", serif;
     font-weight: 400;
-    background-color: black;
+    background-color: white;
     height: 100%;
     width: 100%;
     font-size: 1em;
-    line-height: 1.5;
 
     margin:0;
     padding:0;
@@ -17,7 +16,8 @@ body {
 h1 {
     font-family: georgia;
     padding: 1em;
-    color: white;
+    color: black;
+    background-color:white;
     font-size: 3em;
     font-style: italic;
     max-width: 100%;
@@ -30,6 +30,18 @@ p {
     margin-top: 3em;
 }
 
+a {
+    text-decoration:underline;
+    text-decoration-color:#c72b2b;
+    color:#c72b2b;
+}
+
+a:hover {
+    background: #c72b2b;
+    color:white;
+    cursor:default;
+}
+
 .article {
     position: fixed;
     right: 0;
@@ -37,13 +49,20 @@ p {
     z-index: 0;
     height: 100%;
     width: 35vw;
-    color: white;
+    color: black;
 }
 
 .article[Yscrollable="true"] {
     position: absolute;
     top: 70%; /*should match data anchor */
     right: 0%;
+}
+
+.author {
+    text-align:right;
+    display:block;
+    font-style:italic;
+    font-weight:400;
 }
 
 .fixed-wrapper {
@@ -89,9 +108,9 @@ p {
     display: block;
     height: 1px;
     width: 80%;
-    background: white;
+    background: black;
     border: 0;
-    border-top: .5em solid white;
+    border-top: .5em solid black;
     margin: 1em 0;
     padding: 0;
 }
