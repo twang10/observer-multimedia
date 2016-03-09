@@ -1,33 +1,36 @@
 @import url(https://fonts.googleapis.com/css?family=Vollkorn:400,700italic);
-
+/*max width of img visible: 500px*/
 html,
 body {
-    font-family: "Vollkorn", serif;
-    font-weight: 400;
-    background-color: white;
-    height: 100%;
-    width: 100%;
-    font-size: 1em;
-
     margin:0;
     padding:0;
+    height: 100%;
+    width: 100%;
+    font-family: "Vollkorn", serif;
+    font-weight: 400;
+    font-size: 1em;
+    background-color: white;
+}
+
+body {
+    display:none; /*for initial fade-in*/
 }
 
 h1 {
-    font-family: georgia;
+    max-width: 100%;
     padding: 1em;
+    font-family: georgia;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 3em;
     color: black;
     background-color:white;
-    font-size: 3em;
-    font-style: italic;
-    max-width: 100%;
-    font-weight: 900;
 }
 
 p {
+    margin-top: 3em;
     padding-left: 5em;
     padding-right: 5em;
-    margin-top: 3em;
 }
 
 a {
@@ -37,6 +40,7 @@ a {
 }
 
 a:hover {
+    text-decoration:none;
     background: #c72b2b;
     color:white;
     cursor:default;
@@ -60,25 +64,22 @@ a:hover {
 }
 
 .author {
-    text-align:right;
     display:block;
     font-style:italic;
     font-weight:400;
+    text-align:right;
 }
 
 .fixed-wrapper {
-    z-index: 1;
-    height: 100vh;
-    width: 65vw;
-
     position: fixed;
     top: 0;
     left: 0;
-
+    z-index: 1;
+    height: 100vh;
+    width: 65vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .fixed-img {
@@ -87,33 +88,29 @@ a:hover {
 }
 
 .backup-img {
-    display: inline-block;
     position: relative;
     top: 0;
     left: 0;
-    padding: 0;
-    margin: 0;
+    display: inline-block;
     width: 100%;
     height: auto;
-}
-
-.small-only {
-    display:none;
+    margin: 0;
+    padding: 0;
 }
 
 .spacer {
-    height:25vh;
+    height:20vh;
 }
 
 .bar {
     display: block;
     height: 1px;
     width: 80%;
-    background: black;
+    margin: 1em 0;
     border: 0;
     border-top: .5em solid black;
-    margin: 1em 0;
     padding: 0;
+    background: black;
 }
 
 .down-arrow {
@@ -121,16 +118,17 @@ a:hover {
     right: 0;
     top: 0;
     z-index: 0;
-
-    height: 100%;
-    width: 35vw;
-    color: black;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
+    height: 100%;
+    width: 35vw;
+    color: black;
     font-size:5em;
+}
+
+.small-only {
+    display:none;
 }
 
 @media (max-width: 767px) , (orientation: portrait) {
@@ -138,12 +136,12 @@ a:hover {
         display:inline;
     }
     .large-only {
-        display:none;
+        display:none !important; /* was having issue with arrow, fix later */
     }
     .article,
     .article[Yscrollable="true"] {
-        display:inline;
         position: static;
+        display:inline;
     }
     .spacer {
         height:3em;
