@@ -25,7 +25,14 @@ h1 {
     font-style: italic;
     font-weight: 700;
     font-size: 3em;
-    color: black;
+    color: white;
+    background:rgba(176, 38, 44, 0.85);
+}
+
+#subtitle {
+    font-size:0.5em;
+    font-weight:400;
+    color:white;
 }
 
 p {
@@ -36,15 +43,19 @@ p {
 
 a {
     text-decoration:underline;
-    text-decoration-color:#c72b2b;
-    color:#c72b2b;
+    text-decoration-color:#B0262C;
+    color:#B0262C;
 }
 
 a:hover {
     text-decoration:none;
-    background: #c72b2b;
+    background: #B0262C;
     color:white;
     cursor:default;
+}
+
+.highlight {
+    background:rgba(176, 38, 44, 0.85);
 }
 
 .article {
@@ -180,6 +191,9 @@ a:hover {
     p {
         padding-left: 2em;
         padding-right: 2em;
+    }
+    #subtitle {
+        font-size:0.7em;
     }
 }
 
